@@ -3,7 +3,7 @@ import axios from 'axios';
 import * as cheerio from 'cheerio';
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3020;
 
 const MENU_URL = 'https://beslenme.manas.edu.kg/menu';
 const KIRAATHANE_URL = 'https://beslenme.manas.edu.kg/1';
@@ -106,17 +106,20 @@ const translations = {
 };
 
 function generateId(name) {
-  return name
-    .toLowerCase()
-    .replace(/ç/g, 'c')
-    .replace(/ğ/g, 'g')
-    .replace(/ı/g, 'i')
-    .replace(/ö/g, 'o')
-    .replace(/ş/g, 's')
-    .replace(/ü/g, 'u')
-    .replace(/[^a-z0-9]+/g, '_')
-    .replace(/^_|_$/g, '');
+    return name
+        .replace(/İ/g, 'i') // Сначала меняем большую İ на маленькую i
+        .replace(/I/g, 'i') // Большую I без точки тоже в i
+        .toLowerCase()
+        .replace(/ç/g, 'c')
+        .replace(/ğ/g, 'g')
+        .replace(/ı/g, 'i')
+        .replace(/ö/g, 'o')
+        .replace(/ş/g, 's')
+        .replace(/ü/g, 'u')
+        .replace(/[^a-z0-9]+/g, '_') // Теперь тут не будет лишних символов
+        .replace(/^_|_$/g, '');
 }
+
 
 function translateFood(turkishName) {
   // Try exact match first
@@ -244,8 +247,9 @@ async function fetchAndParseKiraathane() {
 
     if (tagName === 'h4') {
       // Category header
-      const categoryName = text.toUpperCase();
-      const translation = categoryTranslations[categoryName];
+      //const categoryName = text.toUpperCase();
+        const categoryName = text.trim().toLocaleUpperCase('tr-TR');
+        const translation = categoryTranslations[categoryName];
 
       if (translation) {
         currentCategory = {
@@ -328,8 +332,10 @@ app.get('/health', (req, res) => {
   res.json({ status: 'ok' });
 });
 
-app.listen(PORT, 'localhost', () => {
-  console.log(`Server running on http://0.0.0.0:${PORT}`);
-  console.log(`Menu endpoint: http://0.0.0.0:${PORT}/menu`);
-  console.log(`Kiraathane endpoint: http://0.0.0.0:${PORT}/kiraathane`);
+// Используем 0.0.0.0 чтобы быть доступным извне (особенно важно для Docker/WSL)
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`🚀 Server is running!`);
+    console.log(`🏠 Local: http://localhost:${PORT}`);
+    console.log(`- Menu: http://localhost:${PORT}/menu`);
+    console.log(`- Kiraathane: http://localhost:${PORT}/kiraathane`);
 });
