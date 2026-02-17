@@ -17,7 +17,7 @@ const categoryTranslations = {
   'KAHVALTILIKLAR': {id: 'breakfast', title: 'Завтраки'},
   'SALATALAR': {id: 'salads', title: 'Салаты'},
   'TATLILAR': {id: 'desserts', title: 'Десерты'},
-  'KÖFTE VE DÖNERLER': {id: 'meatballs_and_doner', title: 'Котлеты и донер'},
+  'KÖFTE VE DÖNERLER': {id: 'meatballs_and_doner', title: 'Котлеты и донеры'},
   'SOĞUK İÇECEKLER': {id: 'cold_drinks', title: 'Холодные напитки'},
   'YOĞURTLAR': {id: 'yogurts', title: 'Йогурты'}
 };
@@ -141,7 +141,7 @@ function translateFood(turkishName) {
   };
 }
 
-async function fetchAndParseMenu() {
+/*async function fetchAndParseMenu() {
   const response = await axios.get(MENU_URL);
   const $ = cheerio.load(response.data);
 
@@ -230,6 +230,106 @@ async function fetchAndParseMenu() {
       lastUpdated: new Date().toISOString()
     }
   };
+}*/
+async function fetchAndParseMenu() {
+    const response = await axios.get(MENU_URL);
+    const $ = cheerio.load(response.data);
+
+    const foods = new Map();
+    const menus = [];
+
+    let currentDate = null;
+    let currentItems = [];
+
+    // Parse the page content
+    $('h5, h6').each((_, element) => {
+        const $el = $(element);
+        const tagName = element.tagName.toLowerCase();
+
+        // Очищаем текст от множественных пробелов и переносов строк,
+        // которые видны в коде страницы вокруг даты и внутри span
+        const text = $el.text().replace(/\s+/g, ' ').trim();
+
+        if (tagName === 'h5') {
+            // Ищем только паттерн даты DD.MM.YYYY в начале строки.
+            // Игнорируем всё, что идет после года (названия дней недели и т.д.)
+            const dateMatch = text.match(/^(\d{2})\.(\d{2})\.(\d{4})/);
+
+            if (dateMatch) {
+                // Если встретили новую дату — сохраняем накопленное меню предыдущего дня
+                if (currentDate && currentItems.length > 0) {
+                    menus.push({
+                        date: currentDate,
+                        items: [...currentItems]
+                    });
+                }
+
+                // Форматируем дату в ISO (YYYY-MM-DD)
+                const [, day, month, year] = dateMatch;
+                currentDate = `${year}-${month}-${day}`;
+                currentItems = [];
+
+                // Прекращаем обработку текущего h5, так как это заголовок даты
+                return;
+            }
+
+            // Если это не дата, проверяем, не является ли текст названием блюда
+            // Исключаем пустые строки, строки начинающиеся с цифр и технические заголовки
+            if (text && !text.match(/^\d/) && text !== 'YEMEKHANE' && text !== 'MENÜ') {
+                const foodName = text.replace(/\*+/g, '').trim();
+
+                if (foodName) {
+                    const id = generateId(foodName);
+
+                    if (!foods.has(id)) {
+                        const translation = translateFood(foodName);
+                        foods.set(id, {
+                            id,
+                            name: {
+                                tr: foodName,
+                                ru: translation.ru,
+                                en: translation.en
+                            },
+                            caloriesKcal: 0
+                        });
+                    }
+
+                    currentItems.push(id);
+                }
+            }
+        } else if (tagName === 'h6') {
+            // Логика калорий остается прежней, но используем очищенный текст
+            const calorieMatch = text.match(/Kalori:\s*(\d+)/i);
+
+            if (calorieMatch && currentItems.length > 0) {
+                const calories = parseInt(calorieMatch[1], 10);
+                const lastItemId = currentItems[currentItems.length - 1];
+                const food = foods.get(lastItemId);
+
+                if (food && food.caloriesKcal === 0) {
+                    food.caloriesKcal = calories;
+                }
+            }
+        }
+    });
+
+    // Добавляем последний обработанный день
+    if (currentDate && currentItems.length > 0) {
+        menus.push({
+            date: currentDate,
+            items: [...currentItems]
+        });
+    }
+
+    return {
+        foods: Array.from(foods.values()),
+        menus,
+        meta: {
+            timezone: 'Asia/Bishkek',
+            source: 'manas_kantin',
+            lastUpdated: new Date().toISOString()
+        }
+    };
 }
 
 async function fetchAndParseKiraathane() {
