@@ -1,0 +1,31 @@
+name: Update Menu Data
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Запуск раз в сутки в полночь
+  workflow_dispatch: # Позволяет запустить вручную кнопкой в GitHub
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run parser
+        run: node parser.js
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "Menu Bot"
+          git config --global user.email "bot@example.com"
+          git add menu.json buffet.json
+          git commit -m "chore: automated menu update $(date)" || echo "No changes to commit"
+          git push

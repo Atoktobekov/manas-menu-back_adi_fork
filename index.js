@@ -1,6 +1,7 @@
 import express from 'express';
 import axios from 'axios';
 import * as cheerio from 'cheerio';
+import fs from 'fs/promises';
 
 const app = express();
 const PORT = process.env.PORT || 3020;
@@ -342,9 +343,28 @@ app.get('/health', (req, res) => {
 });
 
 // Используем 0.0.0.0 чтобы быть доступным извне (особенно важно для Docker/WSL)
+/*
 app.listen(PORT, '0.0.0.0', () => {
     console.log(`🚀 Server is running!`);
     console.log(`🏠 Local: http://localhost:${PORT}`);
     console.log(`- Menu: http://localhost:${PORT}/menu`);
     console.log(`- Kiraathane: http://localhost:${PORT}/kiraathane`);
 });
+*/
+
+async function saveJsonFiles() {
+    try {
+        const menuData = await fetchAndParseMenu();
+        const kiraathaneData = await fetchAndParseKiraathane();
+
+        await fs.writeFile('public/menu.json', JSON.stringify(menuData, null, 2));
+        await fs.writeFile('public/buffet.json', JSON.stringify(kiraathaneData, null, 2));
+
+        console.log('Files updated successfully');
+    } catch (error) {
+        console.error('Update failed:', error);
+        process.exit(1);
+    }
+}
+
+saveJsonFiles();

@@ -1,0 +1,278 @@
+{
+  "categories": [
+    {
+      "id": "hot_drinks",
+      "title": "Горячие напитки",
+      "items": [
+        {
+          "id": "cay_demleme",
+          "name": "ÇAY DEMLEME",
+          "price": 20
+        },
+        {
+          "id": "cay_sallama",
+          "name": "ÇAY SALLAMA",
+          "price": 20
+        },
+        {
+          "id": "kahve_sade",
+          "name": "KAHVE SADE",
+          "price": 30
+        },
+        {
+          "id": "kahve_sutlu",
+          "name": "KAHVE SÜTLÜ",
+          "price": 30
+        }
+      ]
+    },
+    {
+      "id": "pizza_and_pide",
+      "title": "Пицца и пиде",
+      "items": [
+        {
+          "id": "lahmacun",
+          "name": "LAHMACUN",
+          "price": 100
+        },
+        {
+          "id": "pide_karisik",
+          "name": "PİDE KARIŞIK",
+          "price": 170
+        },
+        {
+          "id": "pide_kiymali",
+          "name": "PİDE KIYMALI",
+          "price": 150
+        },
+        {
+          "id": "pide_peynirli",
+          "name": "PİDE PEYNİRLİ",
+          "price": 160
+        },
+        {
+          "id": "pide_yumurtali",
+          "name": "PİDE YUMURTALI",
+          "price": 140
+        },
+        {
+          "id": "pizza_karisik",
+          "name": "PİZZA KARIŞIK",
+          "price": 260
+        },
+        {
+          "id": "pizza_peynirli",
+          "name": "PİZZA PEYNİRLİ",
+          "price": 220
+        },
+        {
+          "id": "pizza_sosisli",
+          "name": "PİZZA SOSİSLİ",
+          "price": 250
+        },
+        {
+          "id": "tost_kasarli",
+          "name": "TOST KAŞARLI",
+          "price": 90
+        },
+        {
+          "id": "tost_karisik",
+          "name": "TOST KARIŞIK",
+          "price": 130
+        }
+      ]
+    },
+    {
+      "id": "flour_products",
+      "title": "Мучные изделия",
+      "items": [
+        {
+          "id": "sandvic_satis",
+          "name": "SANDVİÇ SATIŞ",
+          "price": 75
+        },
+        {
+          "id": "ekmek_satis",
+          "name": "EKMEK SATIŞ",
+          "price": 30
+        },
+        {
+          "id": "su_boregi_peynirli",
+          "name": "SU BÖREĞİ PEYNİRLİ",
+          "price": 50
+        },
+        {
+          "id": "pogaca_lorlu",
+          "name": "POĞAÇA LORLU",
+          "price": 40
+        },
+        {
+          "id": "samsi_kiymali",
+          "name": "SAMSI KIYMALI",
+          "price": 45
+        },
+        {
+          "id": "samsi_lorlu",
+          "name": "SAMSI LORLU",
+          "price": 45
+        },
+        {
+          "id": "simit",
+          "name": "SİMİT",
+          "price": 40
+        },
+        {
+          "id": "top_kek",
+          "name": "TOP KEK",
+          "price": 40
+        }
+      ]
+    },
+    {
+      "id": "breakfast",
+      "title": "Завтраки",
+      "items": [
+        {
+          "id": "bal_50_gr",
+          "name": "BAL 50 GR",
+          "price": 45
+        },
+        {
+          "id": "kahvalti_tabagi",
+          "name": "KAHVALTI TABAĞI",
+          "price": 150
+        },
+        {
+          "id": "tereyag_50_gr",
+          "name": "TEREYAĞ 50 GR",
+          "price": 40
+        },
+        {
+          "id": "zeytin_50_gr",
+          "name": "ZEYTİN 50 GR",
+          "price": 50
+        }
+      ]
+    },
+    {
+      "id": "salads",
+      "title": "Салаты",
+      "items": [
+        {
+          "id": "havuc_salatasi",
+          "name": "HAVUÇ SALATASI",
+          "price": 40
+        },
+        {
+          "id": "rus_salatasi",
+          "name": "RUS SALATASI",
+          "price": 65
+        }
+      ]
+    },
+    {
+      "id": "desserts",
+      "title": "Десерты",
+      "items": [
+        {
+          "id": "baklava",
+          "name": "BAKLAVA",
+          "price": 50
+        },
+        {
+          "id": "islak_kek",
+          "name": "ISLAK KEK",
+          "price": 60
+        },
+        {
+          "id": "kakaolu_puding_cevizli",
+          "name": "KAKAOLU PUDİNG CEVİZLİ",
+          "price": 50
+        },
+        {
+          "id": "kalbur_tatlisi",
+          "name": "KALBUR TATLISI",
+          "price": 60
+        },
+        {
+          "id": "sutlac_cevizli",
+          "name": "SÜTLAÇ CEVİZLİ",
+          "price": 50
+        }
+      ]
+    },
+    {
+      "id": "meatballs_and_doner",
+      "title": "Котлеты и донеры",
+      "items": [
+        {
+          "id": "izgara_kofte_servis",
+          "name": "IZGARA KÖFTE SERVİS",
+          "price": 250
+        },
+        {
+          "id": "kofte_ekmek_arasi",
+          "name": "KÖFTE EKMEK ARASI",
+          "price": 125
+        }
+      ]
+    },
+    {
+      "id": "yogurts",
+      "title": "Йогурты",
+      "items": [
+        {
+          "id": "yogurt_600_gr",
+          "name": "YOĞURT 600 GR",
+          "price": 80
+        }
+      ]
+    },
+    {
+      "id": "cold_drinks",
+      "title": "Холодные напитки",
+      "items": [
+        {
+          "id": "kola_0_5_lt",
+          "name": "KOLA 0,5 LT",
+          "price": 57
+        },
+        {
+          "id": "kola_1_lt",
+          "name": "KOLA 1 LT",
+          "price": 90
+        },
+        {
+          "id": "fanta_0_5_lt",
+          "name": "FANTA 0,5 LT",
+          "price": 57
+        },
+        {
+          "id": "fanta_1_lt",
+          "name": "FANTA 1 LT",
+          "price": 90
+        },
+        {
+          "id": "legenda_su_0_5_lt",
+          "name": "LEGENDA SU 0,5 LT",
+          "price": 27
+        },
+        {
+          "id": "maden_suyu_beypazari",
+          "name": "MADEN SUYU BEYPAZARI",
+          "price": 48
+        },
+        {
+          "id": "fuse_tea_0_5_lt",
+          "name": "FUSE TEA 0,5 LT",
+          "price": 57
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "timezone": "Asia/Bishkek",
+    "currency": "KGS",
+    "lastUpdated": "2026-02-18T07:46:55.422Z"
+  }
+}
