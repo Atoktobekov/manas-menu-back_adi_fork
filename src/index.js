@@ -107,8 +107,8 @@ const translations = {
 
 function generateId(name) {
     return name
-        .replace(/İ/g, 'i') // Сначала меняем большую İ на маленькую i
-        .replace(/I/g, 'i') // Большую I без точки тоже в i
+        .replace(/İ/g, 'i')
+        .replace(/I/g, 'i')
         .toLowerCase()
         .replace(/ç/g, 'c')
         .replace(/ğ/g, 'g')
@@ -116,7 +116,7 @@ function generateId(name) {
         .replace(/ö/g, 'o')
         .replace(/ş/g, 's')
         .replace(/ü/g, 'u')
-        .replace(/[^a-z0-9]+/g, '_') // Теперь тут не будет лишних символов
+        .replace(/[^a-z0-9]+/g, '_')
         .replace(/^_|_$/g, '');
 }
 
@@ -141,96 +141,6 @@ function translateFood(turkishName) {
   };
 }
 
-/*async function fetchAndParseMenu() {
-  const response = await axios.get(MENU_URL);
-  const $ = cheerio.load(response.data);
-
-  const foods = new Map();
-  const menus = [];
-
-  let currentDate = null;
-  let currentItems = [];
-
-  // Parse the page content
-  $('h5, h6').each((_, element) => {
-    const $el = $(element);
-    const tagName = element.tagName.toLowerCase();
-    const text = $el.text().trim();
-
-    if (tagName === 'h5') {
-      // Check if it's a date (format: DD.MM.YYYY DayName)
-      const dateMatch = text.match(/^(\d{2})\.(\d{2})\.(\d{4})\s+\w+$/);
-
-      if (dateMatch) {
-        // Save previous menu if exists
-        if (currentDate && currentItems.length > 0) {
-          menus.push({
-            date: currentDate,
-            items: [...currentItems]
-          });
-        }
-
-        // Parse new date
-        const [, day, month, year] = dateMatch;
-        currentDate = `${year}-${month}-${day}`;
-        currentItems = [];
-      } else if (text && !text.match(/^\d/) && text !== 'YEMEKHANE') {
-        // It's a food name
-        const foodName = text.replace(/\*+/g, '').trim();
-
-        if (foodName) {
-          const id = generateId(foodName);
-
-          if (!foods.has(id)) {
-            const translation = translateFood(foodName);
-            foods.set(id, {
-              id,
-              name: {
-                tr: foodName,
-                ru: translation.ru,
-                en: translation.en
-              },
-              caloriesKcal: 0 // Will be updated from h6
-            });
-          }
-
-          currentItems.push(id);
-        }
-      }
-    } else if (tagName === 'h6') {
-      // Check for calories
-      const calorieMatch = text.match(/Kalori:\s*(\d+)/i);
-
-      if (calorieMatch && currentItems.length > 0) {
-        const calories = parseInt(calorieMatch[1], 10);
-        const lastItemId = currentItems[currentItems.length - 1];
-        const food = foods.get(lastItemId);
-
-        if (food && food.caloriesKcal === 0) {
-          food.caloriesKcal = calories;
-        }
-      }
-    }
-  });
-
-  // Don't forget the last menu
-  if (currentDate && currentItems.length > 0) {
-    menus.push({
-      date: currentDate,
-      items: [...currentItems]
-    });
-  }
-
-  return {
-    foods: Array.from(foods.values()),
-    menus,
-    meta: {
-      timezone: 'Asia/Bishkek',
-      source: 'manas_kantin',
-      lastUpdated: new Date().toISOString()
-    }
-  };
-}*/
 async function fetchAndParseMenu() {
     const response = await axios.get(MENU_URL);
     const $ = cheerio.load(response.data);
@@ -347,7 +257,6 @@ async function fetchAndParseKiraathane() {
 
     if (tagName === 'h4') {
       // Category header
-      //const categoryName = text.toUpperCase();
         const categoryName = text.trim().toLocaleUpperCase('tr-TR');
         const translation = categoryTranslations[categoryName];
 
