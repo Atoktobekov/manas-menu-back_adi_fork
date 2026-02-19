@@ -1,42 +1,6 @@
 {
   "foods": [
     {
-      "id": "arpa_sehriye_corbasi",
-      "name": {
-        "tr": "Arpa Şehriye Çorbası",
-        "ru": "Суп с ячменной лапшой",
-        "en": "Barley Vermicelli Soup"
-      },
-      "caloriesKcal": 186
-    },
-    {
-      "id": "orman_kebabi",
-      "name": {
-        "tr": "Orman Kebabı",
-        "ru": "Лесной кебаб",
-        "en": "Forest Kebab"
-      },
-      "caloriesKcal": 191
-    },
-    {
-      "id": "bal_kabakli_gul_boregi",
-      "name": {
-        "tr": "Bal Kabaklı Gül Böreği",
-        "ru": "Bal Kabaklı Gül Böreği",
-        "en": "Bal Kabaklı Gül Böreği"
-      },
-      "caloriesKcal": 311
-    },
-    {
-      "id": "yogurt",
-      "name": {
-        "tr": "Yoğurt",
-        "ru": "Йогурт",
-        "en": "Yogurt"
-      },
-      "caloriesKcal": 158
-    },
-    {
       "id": "ezogelin_corbasi",
       "name": {
         "tr": "Ezogelin Çorbası",
@@ -217,6 +181,15 @@
       "caloriesKcal": 221
     },
     {
+      "id": "yogurt",
+      "name": {
+        "tr": "Yoğurt",
+        "ru": "Йогурт",
+        "en": "Yogurt"
+      },
+      "caloriesKcal": 158
+    },
+    {
       "id": "tutmac_corbasi",
       "name": {
         "tr": "Tutmaç Çorbası",
@@ -245,15 +218,6 @@
     }
   ],
   "menus": [
-    {
-      "date": "2026-02-18",
-      "items": [
-        "arpa_sehriye_corbasi",
-        "orman_kebabi",
-        "bal_kabakli_gul_boregi",
-        "yogurt"
-      ]
-    },
     {
       "date": "2026-02-19",
       "items": [
@@ -348,6 +312,6 @@
   "meta": {
     "timezone": "Asia/Bishkek",
     "source": "manas_kantin",
-    "lastUpdated": "2026-02-18T07:46:55.331Z"
+    "lastUpdated": "2026-02-19T03:14:45.239Z"
   }
 }
