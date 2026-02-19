@@ -1,0 +1,36 @@
+name: Update Menu Data
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20' # Стабильнее для парсинга
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run parser
+        run: |
+          mkdir -p public
+          node public/index.js
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/menu.json public/buffet.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: automated menu update $(date)" && git push)

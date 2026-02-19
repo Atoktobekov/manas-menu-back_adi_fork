@@ -1,9 +1,10 @@
 import express from 'express';
 import axios from 'axios';
 import * as cheerio from 'cheerio';
+import fs from 'fs/promises';
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3020;
 
 const MENU_URL = 'https://beslenme.manas.edu.kg/menu';
 const KIRAATHANE_URL = 'https://beslenme.manas.edu.kg/1';
@@ -17,7 +18,7 @@ const categoryTranslations = {
   'KAHVALTILIKLAR': {id: 'breakfast', title: 'Завтраки'},
   'SALATALAR': {id: 'salads', title: 'Салаты'},
   'TATLILAR': {id: 'desserts', title: 'Десерты'},
-  'KÖFTE VE DÖNERLER': {id: 'meatballs_and_doner', title: 'Котлеты и донер'},
+  'KÖFTE VE DÖNERLER': {id: 'meatballs_and_doner', title: 'Котлеты и донеры'},
   'SOĞUK İÇECEKLER': {id: 'cold_drinks', title: 'Холодные напитки'},
   'YOĞURTLAR': {id: 'yogurts', title: 'Йогурты'}
 };
@@ -106,17 +107,20 @@ const translations = {
 };
 
 function generateId(name) {
-  return name
-    .toLowerCase()
-    .replace(/ç/g, 'c')
-    .replace(/ğ/g, 'g')
-    .replace(/ı/g, 'i')
-    .replace(/ö/g, 'o')
-    .replace(/ş/g, 's')
-    .replace(/ü/g, 'u')
-    .replace(/[^a-z0-9]+/g, '_')
-    .replace(/^_|_$/g, '');
+    return name
+        .replace(/İ/g, 'i')
+        .replace(/I/g, 'i')
+        .toLowerCase()
+        .replace(/ç/g, 'c')
+        .replace(/ğ/g, 'g')
+        .replace(/ı/g, 'i')
+        .replace(/ö/g, 'o')
+        .replace(/ş/g, 's')
+        .replace(/ü/g, 'u')
+        .replace(/[^a-z0-9]+/g, '_')
+        .replace(/^_|_$/g, '');
 }
+
 
 function translateFood(turkishName) {
   // Try exact match first
@@ -139,94 +143,104 @@ function translateFood(turkishName) {
 }
 
 async function fetchAndParseMenu() {
-  const response = await axios.get(MENU_URL);
-  const $ = cheerio.load(response.data);
+    const response = await axios.get(MENU_URL);
+    const $ = cheerio.load(response.data);
 
-  const foods = new Map();
-  const menus = [];
+    const foods = new Map();
+    const menus = [];
 
-  let currentDate = null;
-  let currentItems = [];
+    let currentDate = null;
+    let currentItems = [];
 
-  // Parse the page content
-  $('h5, h6').each((_, element) => {
-    const $el = $(element);
-    const tagName = element.tagName.toLowerCase();
-    const text = $el.text().trim();
+    // Parse the page content
+    $('h5, h6').each((_, element) => {
+        const $el = $(element);
+        const tagName = element.tagName.toLowerCase();
 
-    if (tagName === 'h5') {
-      // Check if it's a date (format: DD.MM.YYYY DayName)
-      const dateMatch = text.match(/^(\d{2})\.(\d{2})\.(\d{4})\s+\w+$/);
+        // Очищаем текст от множественных пробелов и переносов строк,
+        // которые видны в коде страницы вокруг даты и внутри span
+        const text = $el.text().replace(/\s+/g, ' ').trim();
 
-      if (dateMatch) {
-        // Save previous menu if exists
-        if (currentDate && currentItems.length > 0) {
-          menus.push({
+        if (tagName === 'h5') {
+            // Ищем только паттерн даты DD.MM.YYYY в начале строки.
+            // Игнорируем всё, что идет после года (названия дней недели и т.д.)
+            const dateMatch = text.match(/^(\d{2})\.(\d{2})\.(\d{4})/);
+
+            if (dateMatch) {
+                // Если встретили новую дату — сохраняем накопленное меню предыдущего дня
+                if (currentDate && currentItems.length > 0) {
+                    menus.push({
+                        date: currentDate,
+                        items: [...currentItems]
+                    });
+                }
+
+                // Форматируем дату в ISO (YYYY-MM-DD)
+                const [, day, month, year] = dateMatch;
+                currentDate = `${year}-${month}-${day}`;
+                currentItems = [];
+
+                // Прекращаем обработку текущего h5, так как это заголовок даты
+                return;
+            }
+
+            // Если это не дата, проверяем, не является ли текст названием блюда
+            // Исключаем пустые строки, строки начинающиеся с цифр и технические заголовки
+            if (text && !text.match(/^\d/) && text !== 'YEMEKHANE' && text !== 'MENÜ') {
+                const foodName = text.replace(/\*+/g, '').trim();
+
+                if (foodName) {
+                    const id = generateId(foodName);
+
+                    if (!foods.has(id)) {
+                        const translation = translateFood(foodName);
+                        foods.set(id, {
+                            id,
+                            name: {
+                                tr: foodName,
+                                ru: translation.ru,
+                                en: translation.en
+                            },
+                            caloriesKcal: 0
+                        });
+                    }
+
+                    currentItems.push(id);
+                }
+            }
+        } else if (tagName === 'h6') {
+            // Логика калорий остается прежней, но используем очищенный текст
+            const calorieMatch = text.match(/Kalori:\s*(\d+)/i);
+
+            if (calorieMatch && currentItems.length > 0) {
+                const calories = parseInt(calorieMatch[1], 10);
+                const lastItemId = currentItems[currentItems.length - 1];
+                const food = foods.get(lastItemId);
+
+                if (food && food.caloriesKcal === 0) {
+                    food.caloriesKcal = calories;
+                }
+            }
+        }
+    });
+
+    // Добавляем последний обработанный день
+    if (currentDate && currentItems.length > 0) {
+        menus.push({
             date: currentDate,
             items: [...currentItems]
-          });
-        }
-
-        // Parse new date
-        const [, day, month, year] = dateMatch;
-        currentDate = `${year}-${month}-${day}`;
-        currentItems = [];
-      } else if (text && !text.match(/^\d/) && text !== 'YEMEKHANE') {
-        // It's a food name
-        const foodName = text.replace(/\*+/g, '').trim();
-
-        if (foodName) {
-          const id = generateId(foodName);
-
-          if (!foods.has(id)) {
-            const translation = translateFood(foodName);
-            foods.set(id, {
-              id,
-              name: {
-                tr: foodName,
-                ru: translation.ru,
-                en: translation.en
-              },
-              caloriesKcal: 0 // Will be updated from h6
-            });
-          }
-
-          currentItems.push(id);
-        }
-      }
-    } else if (tagName === 'h6') {
-      // Check for calories
-      const calorieMatch = text.match(/Kalori:\s*(\d+)/i);
-
-      if (calorieMatch && currentItems.length > 0) {
-        const calories = parseInt(calorieMatch[1], 10);
-        const lastItemId = currentItems[currentItems.length - 1];
-        const food = foods.get(lastItemId);
-
-        if (food && food.caloriesKcal === 0) {
-          food.caloriesKcal = calories;
-        }
-      }
+        });
     }
-  });
 
-  // Don't forget the last menu
-  if (currentDate && currentItems.length > 0) {
-    menus.push({
-      date: currentDate,
-      items: [...currentItems]
-    });
-  }
-
-  return {
-    foods: Array.from(foods.values()),
-    menus,
-    meta: {
-      timezone: 'Asia/Bishkek',
-      source: 'manas_kantin',
-      lastUpdated: new Date().toISOString()
-    }
-  };
+    return {
+        foods: Array.from(foods.values()),
+        menus,
+        meta: {
+            timezone: 'Asia/Bishkek',
+            source: 'manas_kantin',
+            lastUpdated: new Date().toISOString()
+        }
+    };
 }
 
 async function fetchAndParseKiraathane() {
@@ -244,8 +258,8 @@ async function fetchAndParseKiraathane() {
 
     if (tagName === 'h4') {
       // Category header
-      const categoryName = text.toUpperCase();
-      const translation = categoryTranslations[categoryName];
+        const categoryName = text.trim().toLocaleUpperCase('tr-TR');
+        const translation = categoryTranslations[categoryName];
 
       if (translation) {
         currentCategory = {
@@ -328,8 +342,29 @@ app.get('/health', (req, res) => {
   res.json({ status: 'ok' });
 });
 
-app.listen(PORT, 'localhost', () => {
-  console.log(`Server running on http://0.0.0.0:${PORT}`);
-  console.log(`Menu endpoint: http://0.0.0.0:${PORT}/menu`);
-  console.log(`Kiraathane endpoint: http://0.0.0.0:${PORT}/kiraathane`);
+// Используем 0.0.0.0 чтобы быть доступным извне (особенно важно для Docker/WSL)
+/*
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`🚀 Server is running!`);
+    console.log(`🏠 Local: http://localhost:${PORT}`);
+    console.log(`- Menu: http://localhost:${PORT}/menu`);
+    console.log(`- Kiraathane: http://localhost:${PORT}/kiraathane`);
 });
+*/
+
+async function saveJsonFiles() {
+    try {
+        const menuData = await fetchAndParseMenu();
+        const kiraathaneData = await fetchAndParseKiraathane();
+
+        await fs.writeFile('public/menu.json', JSON.stringify(menuData, null, 2));
+        await fs.writeFile('public/buffet.json', JSON.stringify(kiraathaneData, null, 2));
+
+        console.log('Files updated successfully');
+    } catch (error) {
+        console.error('Update failed:', error);
+        process.exit(1);
+    }
+}
+
+saveJsonFiles();

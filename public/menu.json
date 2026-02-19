@@ -1,0 +1,317 @@
+{
+  "foods": [
+    {
+      "id": "ezogelin_corbasi",
+      "name": {
+        "tr": "Ezogelin Çorbası",
+        "ru": "Суп Эзогелин",
+        "en": "Ezogelin Soup"
+      },
+      "caloriesKcal": 217
+    },
+    {
+      "id": "kavurma",
+      "name": {
+        "tr": "Kavurma",
+        "ru": "Жаркое на садже",
+        "en": "Sac Kavurma"
+      },
+      "caloriesKcal": 361
+    },
+    {
+      "id": "sehriyeli_pirinc_pilavi",
+      "name": {
+        "tr": "Şehriyeli Pirinç Pilavı",
+        "ru": "Рисовый плов с вермишелью",
+        "en": "Vermicelli Rice Pilaf"
+      },
+      "caloriesKcal": 365
+    },
+    {
+      "id": "cacik",
+      "name": {
+        "tr": "Cacık",
+        "ru": "Джаджик",
+        "en": "Cacik (Yogurt Dip)"
+      },
+      "caloriesKcal": 200
+    },
+    {
+      "id": "yayla_corbasi",
+      "name": {
+        "tr": "Yayla Çorbası",
+        "ru": "Суп Яйла",
+        "en": "Yayla Soup"
+      },
+      "caloriesKcal": 175
+    },
+    {
+      "id": "tavuk_baget_firin_patates",
+      "name": {
+        "tr": "Tavuk Baget-Fırın Patates",
+        "ru": "Куриные голени с запеченным картофелем",
+        "en": "Chicken Drumstick with Baked Potato"
+      },
+      "caloriesKcal": 402
+    },
+    {
+      "id": "karisik_komposto",
+      "name": {
+        "tr": "Karışık Komposto",
+        "ru": "Смешанный компот",
+        "en": "Mixed Compote"
+      },
+      "caloriesKcal": 290
+    },
+    {
+      "id": "elvan_corbasi",
+      "name": {
+        "tr": "Elvan Çorbası",
+        "ru": "Суп Эльван",
+        "en": "Elvan Soup"
+      },
+      "caloriesKcal": 95
+    },
+    {
+      "id": "kurdak",
+      "name": {
+        "tr": "Kurdak",
+        "ru": "Kurdak",
+        "en": "Kurdak"
+      },
+      "caloriesKcal": 525
+    },
+    {
+      "id": "sehriyeli_bulgur_pilavi",
+      "name": {
+        "tr": "Şehriyeli Bulgur Pilavı",
+        "ru": "Плов",
+        "en": "Pilaf"
+      },
+      "caloriesKcal": 315
+    },
+    {
+      "id": "mevsim_salatasi",
+      "name": {
+        "tr": "Mevsim Salatası",
+        "ru": "Mevsim Salatası",
+        "en": "Mevsim Salatası"
+      },
+      "caloriesKcal": 180
+    },
+    {
+      "id": "eriste_corbasi",
+      "name": {
+        "tr": "Erişte Çorbası",
+        "ru": "Суп с лапшой",
+        "en": "Noodle Soup"
+      },
+      "caloriesKcal": 145
+    },
+    {
+      "id": "et_haslama",
+      "name": {
+        "tr": "Et Haşlama",
+        "ru": "Отварное мясо",
+        "en": "Boiled Meat"
+      },
+      "caloriesKcal": 900
+    },
+    {
+      "id": "suzme_mercimek_corbasi",
+      "name": {
+        "tr": "Süzme Mercimek Çorbası",
+        "ru": "Суп",
+        "en": "Soup"
+      },
+      "caloriesKcal": 176
+    },
+    {
+      "id": "tas_kebap",
+      "name": {
+        "tr": "Tas Kebap",
+        "ru": "Tas Kebap",
+        "en": "Tas Kebap"
+      },
+      "caloriesKcal": 343
+    },
+    {
+      "id": "yogurtlu_eriste_corbasi",
+      "name": {
+        "tr": "Yoğurtlu Erişte Çorbası",
+        "ru": "Суп",
+        "en": "Soup"
+      },
+      "caloriesKcal": 146
+    },
+    {
+      "id": "pureli_kofte",
+      "name": {
+        "tr": "Püreli Köfte",
+        "ru": "Котлеты",
+        "en": "Meatballs"
+      },
+      "caloriesKcal": 328
+    },
+    {
+      "id": "ispanakli_gul_boregi",
+      "name": {
+        "tr": "Ispanaklı Gül Böreği",
+        "ru": "Ispanaklı Gül Böreği",
+        "en": "Ispanaklı Gül Böreği"
+      },
+      "caloriesKcal": 306
+    },
+    {
+      "id": "seker_pare",
+      "name": {
+        "tr": "Şeker Pare",
+        "ru": "Шекерпаре",
+        "en": "Sekerpare"
+      },
+      "caloriesKcal": 140
+    },
+    {
+      "id": "mevsim_turlusu",
+      "name": {
+        "tr": "Mevsim Türlüsü",
+        "ru": "Овощное рагу (сезонное)",
+        "en": "Seasonal Vegetable Stew"
+      },
+      "caloriesKcal": 221
+    },
+    {
+      "id": "yogurt",
+      "name": {
+        "tr": "Yoğurt",
+        "ru": "Йогурт",
+        "en": "Yogurt"
+      },
+      "caloriesKcal": 158
+    },
+    {
+      "id": "tutmac_corbasi",
+      "name": {
+        "tr": "Tutmaç Çorbası",
+        "ru": "Суп Тутмач",
+        "en": "Tutmac Soup"
+      },
+      "caloriesKcal": 182
+    },
+    {
+      "id": "mercimek_corbasi",
+      "name": {
+        "tr": "Mercimek Çorbası",
+        "ru": "Чечевичный суп",
+        "en": "Lentil Soup"
+      },
+      "caloriesKcal": 176
+    },
+    {
+      "id": "elma",
+      "name": {
+        "tr": "Elma",
+        "ru": "Elma",
+        "en": "Elma"
+      },
+      "caloriesKcal": 60
+    }
+  ],
+  "menus": [
+    {
+      "date": "2026-02-19",
+      "items": [
+        "ezogelin_corbasi",
+        "kavurma",
+        "sehriyeli_pirinc_pilavi",
+        "cacik"
+      ]
+    },
+    {
+      "date": "2026-02-20",
+      "items": [
+        "yayla_corbasi",
+        "tavuk_baget_firin_patates",
+        "sehriyeli_pirinc_pilavi",
+        "karisik_komposto"
+      ]
+    },
+    {
+      "date": "2026-02-21",
+      "items": [
+        "elvan_corbasi",
+        "kurdak",
+        "sehriyeli_bulgur_pilavi",
+        "mevsim_salatasi"
+      ]
+    },
+    {
+      "date": "2026-02-22",
+      "items": [
+        "eriste_corbasi",
+        "et_haslama",
+        "sehriyeli_pirinc_pilavi",
+        "cacik"
+      ]
+    },
+    {
+      "date": "2026-02-23",
+      "items": [
+        "suzme_mercimek_corbasi",
+        "tas_kebap",
+        "sehriyeli_pirinc_pilavi",
+        "mevsim_salatasi"
+      ]
+    },
+    {
+      "date": "2026-02-24",
+      "items": [
+        "yogurtlu_eriste_corbasi",
+        "pureli_kofte",
+        "ispanakli_gul_boregi",
+        "seker_pare"
+      ]
+    },
+    {
+      "date": "2026-02-25",
+      "items": [
+        "ezogelin_corbasi",
+        "mevsim_turlusu",
+        "sehriyeli_bulgur_pilavi",
+        "yogurt"
+      ]
+    },
+    {
+      "date": "2026-02-26",
+      "items": [
+        "tutmac_corbasi",
+        "kavurma",
+        "sehriyeli_pirinc_pilavi",
+        "mevsim_salatasi"
+      ]
+    },
+    {
+      "date": "2026-02-27",
+      "items": [
+        "yayla_corbasi",
+        "tavuk_baget_firin_patates",
+        "sehriyeli_pirinc_pilavi",
+        "karisik_komposto"
+      ]
+    },
+    {
+      "date": "2026-02-28",
+      "items": [
+        "mercimek_corbasi",
+        "tas_kebap",
+        "sehriyeli_bulgur_pilavi",
+        "elma"
+      ]
+    }
+  ],
+  "meta": {
+    "timezone": "Asia/Bishkek",
+    "source": "manas_kantin",
+    "lastUpdated": "2026-02-19T03:34:21.687Z"
+  }
+}
