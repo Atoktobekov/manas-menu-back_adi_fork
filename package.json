@@ -2,11 +2,11 @@
   "name": "back-manas",
   "version": "1.0.0",
   "description": "Backend for Manas University cafeteria menu",
-  "main": "index.js",
+  "main": "public/index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "dev": "node --watch index.js"
+    "start": "node public/index.js",
+    "dev": "node --watch public/index.js"
   },
   "dependencies": {
     "axios": "^1.6.7",
