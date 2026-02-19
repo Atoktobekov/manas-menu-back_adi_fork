@@ -3,9 +3,8 @@ name: Update Menu Data
 on:
   schedule:
     - cron: '0 0 * * *'
-  workflow_dispatch: # Чтобы ты мог нажать кнопку "Run workflow" для теста
+  workflow_dispatch:
 
-# Добавляем права на запись
 permissions:
   contents: write
 
@@ -18,19 +17,20 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
-          cache: 'npm' # Кэширование ускорит запуск
+          node-version: '20' # Стабильнее для парсинга
+          cache: 'npm'
 
       - name: Install dependencies
         run: npm install
 
       - name: Run parser
-        run: node index.js # Убедись, что файл называется так
+        run: |
+          mkdir -p public
+          node index.js
 
       - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add public/menu.json public/buffet.json
-          # Проверка на наличие изменений, чтобы не падать с ошибкой, если ничего не поменялось
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore: automated menu update $(date)" && git push)
