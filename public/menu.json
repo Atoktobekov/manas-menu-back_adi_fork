@@ -1,42 +1,6 @@
 {
   "foods": [
     {
-      "id": "ezogelin_corbasi",
-      "name": {
-        "tr": "Ezogelin Çorbası",
-        "ru": "Суп Эзогелин",
-        "en": "Ezogelin Soup"
-      },
-      "caloriesKcal": 217
-    },
-    {
-      "id": "kavurma",
-      "name": {
-        "tr": "Kavurma",
-        "ru": "Жаркое на садже",
-        "en": "Sac Kavurma"
-      },
-      "caloriesKcal": 361
-    },
-    {
-      "id": "sehriyeli_pirinc_pilavi",
-      "name": {
-        "tr": "Şehriyeli Pirinç Pilavı",
-        "ru": "Рисовый плов с вермишелью",
-        "en": "Vermicelli Rice Pilaf"
-      },
-      "caloriesKcal": 365
-    },
-    {
-      "id": "cacik",
-      "name": {
-        "tr": "Cacık",
-        "ru": "Джаджик",
-        "en": "Cacik (Yogurt Dip)"
-      },
-      "caloriesKcal": 200
-    },
-    {
       "id": "yayla_corbasi",
       "name": {
         "tr": "Yayla Çorbası",
@@ -53,6 +17,15 @@
         "en": "Chicken Drumstick with Baked Potato"
       },
       "caloriesKcal": 402
+    },
+    {
+      "id": "sehriyeli_pirinc_pilavi",
+      "name": {
+        "tr": "Şehriyeli Pirinç Pilavı",
+        "ru": "Рисовый плов с вермишелью",
+        "en": "Vermicelli Rice Pilaf"
+      },
+      "caloriesKcal": 365
     },
     {
       "id": "karisik_komposto",
@@ -118,6 +91,15 @@
       "caloriesKcal": 900
     },
     {
+      "id": "cacik",
+      "name": {
+        "tr": "Cacık",
+        "ru": "Джаджик",
+        "en": "Cacik (Yogurt Dip)"
+      },
+      "caloriesKcal": 200
+    },
+    {
       "id": "suzme_mercimek_corbasi",
       "name": {
         "tr": "Süzme Mercimek Çorbası",
@@ -172,6 +154,15 @@
       "caloriesKcal": 140
     },
     {
+      "id": "ezogelin_corbasi",
+      "name": {
+        "tr": "Ezogelin Çorbası",
+        "ru": "Суп Эзогелин",
+        "en": "Ezogelin Soup"
+      },
+      "caloriesKcal": 217
+    },
+    {
       "id": "mevsim_turlusu",
       "name": {
         "tr": "Mevsim Türlüsü",
@@ -199,6 +190,15 @@
       "caloriesKcal": 182
     },
     {
+      "id": "kavurma",
+      "name": {
+        "tr": "Kavurma",
+        "ru": "Жаркое на садже",
+        "en": "Sac Kavurma"
+      },
+      "caloriesKcal": 361
+    },
+    {
       "id": "mercimek_corbasi",
       "name": {
         "tr": "Mercimek Çorbası",
@@ -218,15 +218,6 @@
     }
   ],
   "menus": [
-    {
-      "date": "2026-02-19",
-      "items": [
-        "ezogelin_corbasi",
-        "kavurma",
-        "sehriyeli_pirinc_pilavi",
-        "cacik"
-      ]
-    },
     {
       "date": "2026-02-20",
       "items": [
@@ -312,6 +303,6 @@
   "meta": {
     "timezone": "Asia/Bishkek",
     "source": "manas_kantin",
-    "lastUpdated": "2026-02-19T03:34:21.687Z"
+    "lastUpdated": "2026-02-20T01:16:14.233Z"
   }
 }
