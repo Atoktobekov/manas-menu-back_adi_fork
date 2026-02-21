@@ -8,8 +8,8 @@
         "en": "Elvan Soup"
       },
       "caloriesKcal": 95,
-      "thumbUrl": "https://info.manas.edu.kg/uploads/kantin/foods/7.jpg",
-      "fullPhotoUrl": "https://info.manas.edu.kg/uploads/kantin/foods/7.jpg"
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/elvan_corbasi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/elvan_corbasi.jpg"
     },
     {
       "id": "kurdak",
@@ -52,8 +52,8 @@
         "en": "Noodle Soup"
       },
       "caloriesKcal": 145,
-      "thumbUrl": "https://info.manas.edu.kg/uploads/kantin/foods/8OzcfGNJhsSPXglmZaNBSqxVoha_A_bK.jpg",
-      "fullPhotoUrl": "https://info.manas.edu.kg/uploads/kantin/foods/8OzcfGNJhsSPXglmZaNBSqxVoha_A_bK.jpg"
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/eriste_corbasi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/eriste_corbasi.jpg"
     },
     {
       "id": "et_haslama",
@@ -250,8 +250,8 @@
         "en": "Lentil Soup"
       },
       "caloriesKcal": 176,
-      "thumbUrl": "https://info.manas.edu.kg/uploads/kantin/foods/23.jpg",
-      "fullPhotoUrl": "https://info.manas.edu.kg/uploads/kantin/foods/23.jpg"
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/mercimek_corbasi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/mercimek_corbasi.jpg"
     },
     {
       "id": "elma",
@@ -342,6 +342,6 @@
   "meta": {
     "timezone": "Asia/Bishkek",
     "source": "manas_kantin",
-    "lastUpdated": "2026-02-21T09:46:58.162Z"
+    "lastUpdated": "2026-02-21T10:08:09.213Z"
   }
 }
