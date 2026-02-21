@@ -84,16 +84,16 @@ export const translations = {
 
 // Category translations for kiraathane
 export const categoryTranslations = {
-    'SICAK İÇECEK': {id: 'hot_drinks', title: 'Горячие напитки'},
-    'PİZZA VE PİDELER': {id: 'pizza_and_pide', title: 'Пицца и пиде'},
-    'UNLU MAMÜLLER': {id: 'flour_products', title: 'Мучные изделия'},
-    'KAHVALTILIKAR': {id: 'breakfast', title: 'Завтраки'},
-    'KAHVALTILIKLAR': {id: 'breakfast', title: 'Завтраки'},
-    'SALATALAR': {id: 'salads', title: 'Салаты'},
-    'TATLILAR': {id: 'desserts', title: 'Десерты'},
-    'KÖFTE VE DÖNERLER': {id: 'meatballs_and_doner', title: 'Котлеты и донеры'},
-    'SOĞUK İÇECEKLER': {id: 'cold_drinks', title: 'Холодные напитки'},
-    'YOĞURTLAR': {id: 'yogurts', title: 'Йогурты'}
+    'SICAK İÇECEK': {id: 'hot_drinks', title: 'SICAK İÇECEK'},
+    'PİZZA VE PİDELER': {id: 'pizza_and_pide', title: 'PİZZA VE PİDELER'},
+    'UNLU MAMÜLLER': {id: 'flour_products', title: 'UNLU MAMÜLLER'},
+    'KAHVALTILIKAR': {id: 'breakfast', title: 'KAHVALTILIKAR'},
+    'KAHVALTILIKLAR': {id: 'breakfast', title: 'KAHVALTILIKLAR'},
+    'SALATALAR': {id: 'salads', title: 'SALATALAR'},
+    'TATLILAR': {id: 'desserts', title: 'TATLILAR'},
+    'KÖFTE VE DÖNERLER': {id: 'meatballs_and_doner', title: 'KÖFTE VE DÖNERLER'},
+    'SOĞUK İÇECEKLER': {id: 'cold_drinks', title: 'SOĞUK İÇECEKLER'},
+    'YOĞURTLAR': {id: 'yogurts', title: 'YOĞURTLAR'}
 };
 
 
