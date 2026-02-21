@@ -87,7 +87,7 @@ export async function fetchAndParseMenu() {
                             ru: translation.ru,
                             en: translation.en
                         },
-                        caloriesKcal: 0,
+                        calories: 0,
                         // фото пока не знаем — запишем после h6
                         _originalUrl: lastImgSrc,
                     });
@@ -107,8 +107,8 @@ export async function fetchAndParseMenu() {
                 const food = foods.get(lastItemId);
 
                 if (food) {
-                    if (food.caloriesKcal === 0) {
-                        food.caloriesKcal = calories;
+                    if (food.calories === 0) {
+                        food.calories = calories;
                     }
                     // Применяем фото только один раз (при первом появлении блюда)
                     if (!('thumbUrl' in food)) {
