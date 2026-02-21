@@ -7,7 +7,9 @@
         "ru": "Суп Эльван",
         "en": "Elvan Soup"
       },
-      "caloriesKcal": 95
+      "caloriesKcal": 95,
+      "thumbUrl": "https://info.manas.edu.kg/uploads/kantin/foods/7.jpg",
+      "fullPhotoUrl": "https://info.manas.edu.kg/uploads/kantin/foods/7.jpg"
     },
     {
       "id": "kurdak",
@@ -16,7 +18,9 @@
         "ru": "Kurdak",
         "en": "Kurdak"
       },
-      "caloriesKcal": 525
+      "caloriesKcal": 525,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/kurdak.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/kurdak.jpg"
     },
     {
       "id": "sehriyeli_bulgur_pilavi",
@@ -25,7 +29,9 @@
         "ru": "Плов",
         "en": "Pilaf"
       },
-      "caloriesKcal": 315
+      "caloriesKcal": 315,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/sehriyeli_bulgur_pilavi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/sehriyeli_bulgur_pilavi.jpg"
     },
     {
       "id": "mevsim_salatasi",
@@ -34,7 +40,9 @@
         "ru": "Mevsim Salatası",
         "en": "Mevsim Salatası"
       },
-      "caloriesKcal": 180
+      "caloriesKcal": 180,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/mevsim_salatasi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/mevsim_salatasi.jpg"
     },
     {
       "id": "eriste_corbasi",
@@ -43,7 +51,9 @@
         "ru": "Суп с лапшой",
         "en": "Noodle Soup"
       },
-      "caloriesKcal": 145
+      "caloriesKcal": 145,
+      "thumbUrl": "https://info.manas.edu.kg/uploads/kantin/foods/8OzcfGNJhsSPXglmZaNBSqxVoha_A_bK.jpg",
+      "fullPhotoUrl": "https://info.manas.edu.kg/uploads/kantin/foods/8OzcfGNJhsSPXglmZaNBSqxVoha_A_bK.jpg"
     },
     {
       "id": "et_haslama",
@@ -52,7 +62,9 @@
         "ru": "Отварное мясо",
         "en": "Boiled Meat"
       },
-      "caloriesKcal": 900
+      "caloriesKcal": 900,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/et_haslama.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/et_haslama.jpg"
     },
     {
       "id": "sehriyeli_pirinc_pilavi",
@@ -70,7 +82,9 @@
         "ru": "Джаджик",
         "en": "Cacik (Yogurt Dip)"
       },
-      "caloriesKcal": 200
+      "caloriesKcal": 200,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/cacik.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/cacik.jpg"
     },
     {
       "id": "suzme_mercimek_corbasi",
@@ -79,7 +93,9 @@
         "ru": "Суп",
         "en": "Soup"
       },
-      "caloriesKcal": 176
+      "caloriesKcal": 176,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/suzme_mercimek_corbasi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/suzme_mercimek_corbasi.jpg"
     },
     {
       "id": "tas_kebap",
@@ -88,7 +104,9 @@
         "ru": "Tas Kebap",
         "en": "Tas Kebap"
       },
-      "caloriesKcal": 343
+      "caloriesKcal": 343,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/tas_kebap.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/tas_kebap.jpg"
     },
     {
       "id": "yogurtlu_eriste_corbasi",
@@ -97,7 +115,9 @@
         "ru": "Суп",
         "en": "Soup"
       },
-      "caloriesKcal": 146
+      "caloriesKcal": 146,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/yogurtlu_eriste_corbasi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/yogurtlu_eriste_corbasi.jpg"
     },
     {
       "id": "pureli_kofte",
@@ -106,7 +126,9 @@
         "ru": "Котлеты",
         "en": "Meatballs"
       },
-      "caloriesKcal": 328
+      "caloriesKcal": 328,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/pureli_kofte.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/pureli_kofte.jpg"
     },
     {
       "id": "ispanakli_gul_boregi",
@@ -115,7 +137,9 @@
         "ru": "Ispanaklı Gül Böreği",
         "en": "Ispanaklı Gül Böreği"
       },
-      "caloriesKcal": 306
+      "caloriesKcal": 306,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/ispanakli_gul_boregi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/ispanakli_gul_boregi.jpg"
     },
     {
       "id": "seker_pare",
@@ -124,7 +148,9 @@
         "ru": "Шекерпаре",
         "en": "Sekerpare"
       },
-      "caloriesKcal": 140
+      "caloriesKcal": 140,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/seker_pare.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/seker_pare.jpg"
     },
     {
       "id": "ezogelin_corbasi",
@@ -133,7 +159,9 @@
         "ru": "Суп Эзогелин",
         "en": "Ezogelin Soup"
       },
-      "caloriesKcal": 217
+      "caloriesKcal": 217,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/ezogelin_corbasi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/ezogelin_corbasi.jpg"
     },
     {
       "id": "mevsim_turlusu",
@@ -142,7 +170,9 @@
         "ru": "Овощное рагу (сезонное)",
         "en": "Seasonal Vegetable Stew"
       },
-      "caloriesKcal": 221
+      "caloriesKcal": 221,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/mevsim_turlusu.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/mevsim_turlusu.jpg"
     },
     {
       "id": "yogurt",
@@ -151,7 +181,9 @@
         "ru": "Йогурт",
         "en": "Yogurt"
       },
-      "caloriesKcal": 158
+      "caloriesKcal": 158,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/yogurt.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/yogurt.jpg"
     },
     {
       "id": "tutmac_corbasi",
@@ -160,7 +192,9 @@
         "ru": "Суп Тутмач",
         "en": "Tutmac Soup"
       },
-      "caloriesKcal": 182
+      "caloriesKcal": 182,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/tutmac_corbasi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/tutmac_corbasi.jpg"
     },
     {
       "id": "kavurma",
@@ -169,7 +203,9 @@
         "ru": "Жаркое на садже",
         "en": "Sac Kavurma"
       },
-      "caloriesKcal": 361
+      "caloriesKcal": 361,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/kavurma.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/kavurma.jpg"
     },
     {
       "id": "yayla_corbasi",
@@ -205,7 +241,9 @@
         "ru": "Чечевичный суп",
         "en": "Lentil Soup"
       },
-      "caloriesKcal": 176
+      "caloriesKcal": 176,
+      "thumbUrl": "https://info.manas.edu.kg/uploads/kantin/foods/23.jpg",
+      "fullPhotoUrl": "https://info.manas.edu.kg/uploads/kantin/foods/23.jpg"
     },
     {
       "id": "elma",
@@ -214,7 +252,9 @@
         "ru": "Elma",
         "en": "Elma"
       },
-      "caloriesKcal": 60
+      "caloriesKcal": 60,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/elma.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/elma.jpg"
     }
   ],
   "menus": [

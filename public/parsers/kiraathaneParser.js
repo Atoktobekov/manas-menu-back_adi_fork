@@ -1,10 +1,27 @@
 import axios from 'axios';
 import * as cheerio from 'cheerio';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-import {KIRAATHANE_URL} from '../config.js';
+import { KIRAATHANE_URL } from '../config.js';
 import { generateId } from '../utils/generateId.js';
-import {categoryTranslations} from "../utils/translateFood.js";
+import { categoryTranslations } from '../utils/translateFood.js';
 
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+const manifest = JSON.parse(
+    fs.readFileSync(path.join(__dirname, '..', 'buffet_manifest.json'), 'utf-8')
+);
+
+const CDN_BASE = 'https://cdn.jsdelivr.net/gh/Atoktobekov/buffet-cdn@main/images';
+
+function resolvePhoto(id, originalUrl) {
+    if (manifest.ids.includes(id)) {
+        return `${CDN_BASE}/${id}.jpg`;
+    }
+    return originalUrl ?? null;
+}
 
 export async function fetchAndParseKiraathane() {
     const response = await axios.get(KIRAATHANE_URL);
@@ -12,16 +29,25 @@ export async function fetchAndParseKiraathane() {
 
     const categories = [];
     let currentCategory = null;
+    let lastImgSrc = null;
 
-    // Parse the page content - h4 for categories, h5 for items, h6 for prices
-    $('h4, h5, h6').each((_, element) => {
+    const elements = $('img, h4, h5, h6').toArray();
+
+    for (const element of elements) {
         const $el = $(element);
         const tagName = element.tagName.toLowerCase();
         const text = $el.text().trim();
 
+        if (tagName === 'img') {
+            const src = $el.attr('src');
+            if (src && src.includes('/kantin/')) {
+                lastImgSrc = src;
+            }
+            continue;
+        }
+
         if (tagName === 'h4') {
-            // Category header
-            const categoryName = text.trim().toLocaleUpperCase('tr-TR');
+            const categoryName = text.toLocaleUpperCase('tr-TR');
             const translation = categoryTranslations[categoryName];
 
             if (translation) {
@@ -32,7 +58,6 @@ export async function fetchAndParseKiraathane() {
                 };
                 categories.push(currentCategory);
             } else if (categoryName && categoryName !== 'KIRAATHANEMİZ' && !categoryName.includes('MENÜ')) {
-                // Unknown category - use generated id
                 currentCategory = {
                     id: generateId(categoryName),
                     title: categoryName,
@@ -40,18 +65,26 @@ export async function fetchAndParseKiraathane() {
                 };
                 categories.push(currentCategory);
             }
-        } else if (tagName === 'h5' && currentCategory) {
-            // Item name
+            lastImgSrc = null;
+            continue;
+        }
+
+        if (tagName === 'h5' && currentCategory) {
             const itemName = text.toUpperCase();
             if (itemName && !itemName.includes('FİYATI')) {
+                const id = generateId(itemName);
                 currentCategory.items.push({
-                    id: generateId(itemName),
+                    id,
                     name: itemName,
-                    price: 0 // Will be updated from h6
+                    price: 0,
+                    photoUrl: resolvePhoto(id, lastImgSrc),
                 });
+                lastImgSrc = null;
             }
-        } else if (tagName === 'h6' && currentCategory && currentCategory.items.length > 0) {
-            // Price - extract number
+            continue;
+        }
+
+        if (tagName === 'h6' && currentCategory && currentCategory.items.length > 0) {
             const priceMatch = text.match(/(\d+)/);
             if (priceMatch) {
                 const lastItem = currentCategory.items[currentCategory.items.length - 1];
@@ -60,13 +93,10 @@ export async function fetchAndParseKiraathane() {
                 }
             }
         }
-    });
-
-    // Filter out empty categories
-    const filteredCategories = categories.filter(cat => cat.items.length > 0);
+    }
 
     return {
-        categories: filteredCategories,
+        categories: categories.filter(cat => cat.items.length > 0),
         meta: {
             timezone: 'Asia/Bishkek',
             currency: 'KGS',
