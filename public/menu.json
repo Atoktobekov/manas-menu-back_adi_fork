@@ -1,42 +1,6 @@
 {
   "foods": [
     {
-      "id": "yayla_corbasi",
-      "name": {
-        "tr": "Yayla Çorbası",
-        "ru": "Суп Яйла",
-        "en": "Yayla Soup"
-      },
-      "caloriesKcal": 175
-    },
-    {
-      "id": "tavuk_baget_firin_patates",
-      "name": {
-        "tr": "Tavuk Baget-Fırın Patates",
-        "ru": "Куриные голени с запеченным картофелем",
-        "en": "Chicken Drumstick with Baked Potato"
-      },
-      "caloriesKcal": 402
-    },
-    {
-      "id": "sehriyeli_pirinc_pilavi",
-      "name": {
-        "tr": "Şehriyeli Pirinç Pilavı",
-        "ru": "Рисовый плов с вермишелью",
-        "en": "Vermicelli Rice Pilaf"
-      },
-      "caloriesKcal": 365
-    },
-    {
-      "id": "karisik_komposto",
-      "name": {
-        "tr": "Karışık Komposto",
-        "ru": "Смешанный компот",
-        "en": "Mixed Compote"
-      },
-      "caloriesKcal": 290
-    },
-    {
       "id": "elvan_corbasi",
       "name": {
         "tr": "Elvan Çorbası",
@@ -89,6 +53,15 @@
         "en": "Boiled Meat"
       },
       "caloriesKcal": 900
+    },
+    {
+      "id": "sehriyeli_pirinc_pilavi",
+      "name": {
+        "tr": "Şehriyeli Pirinç Pilavı",
+        "ru": "Рисовый плов с вермишелью",
+        "en": "Vermicelli Rice Pilaf"
+      },
+      "caloriesKcal": 365
     },
     {
       "id": "cacik",
@@ -199,6 +172,33 @@
       "caloriesKcal": 361
     },
     {
+      "id": "yayla_corbasi",
+      "name": {
+        "tr": "Yayla Çorbası",
+        "ru": "Суп Яйла",
+        "en": "Yayla Soup"
+      },
+      "caloriesKcal": 175
+    },
+    {
+      "id": "tavuk_baget_firin_patates",
+      "name": {
+        "tr": "Tavuk Baget-Fırın Patates",
+        "ru": "Куриные голени с запеченным картофелем",
+        "en": "Chicken Drumstick with Baked Potato"
+      },
+      "caloriesKcal": 402
+    },
+    {
+      "id": "karisik_komposto",
+      "name": {
+        "tr": "Karışık Komposto",
+        "ru": "Смешанный компот",
+        "en": "Mixed Compote"
+      },
+      "caloriesKcal": 290
+    },
+    {
       "id": "mercimek_corbasi",
       "name": {
         "tr": "Mercimek Çorbası",
@@ -218,15 +218,6 @@
     }
   ],
   "menus": [
-    {
-      "date": "2026-02-20",
-      "items": [
-        "yayla_corbasi",
-        "tavuk_baget_firin_patates",
-        "sehriyeli_pirinc_pilavi",
-        "karisik_komposto"
-      ]
-    },
     {
       "date": "2026-02-21",
       "items": [
@@ -303,6 +294,6 @@
   "meta": {
     "timezone": "Asia/Bishkek",
     "source": "manas_kantin",
-    "lastUpdated": "2026-02-20T01:25:57.222Z"
+    "lastUpdated": "2026-02-21T01:23:41.203Z"
   }
 }
