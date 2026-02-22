@@ -1,42 +1,6 @@
 {
   "foods": [
     {
-      "id": "elvan_corbasi",
-      "name": {
-        "tr": "Elvan Çorbası",
-        "ru": "Суп Эльван",
-        "en": "Elvan Soup"
-      },
-      "caloriesKcal": 95
-    },
-    {
-      "id": "kurdak",
-      "name": {
-        "tr": "Kurdak",
-        "ru": "Kurdak",
-        "en": "Kurdak"
-      },
-      "caloriesKcal": 525
-    },
-    {
-      "id": "sehriyeli_bulgur_pilavi",
-      "name": {
-        "tr": "Şehriyeli Bulgur Pilavı",
-        "ru": "Плов",
-        "en": "Pilaf"
-      },
-      "caloriesKcal": 315
-    },
-    {
-      "id": "mevsim_salatasi",
-      "name": {
-        "tr": "Mevsim Salatası",
-        "ru": "Mevsim Salatası",
-        "en": "Mevsim Salatası"
-      },
-      "caloriesKcal": 180
-    },
-    {
       "id": "eriste_corbasi",
       "name": {
         "tr": "Erişte Çorbası",
@@ -91,6 +55,15 @@
       "caloriesKcal": 343
     },
     {
+      "id": "mevsim_salatasi",
+      "name": {
+        "tr": "Mevsim Salatası",
+        "ru": "Mevsim Salatası",
+        "en": "Mevsim Salatası"
+      },
+      "caloriesKcal": 180
+    },
+    {
       "id": "yogurtlu_eriste_corbasi",
       "name": {
         "tr": "Yoğurtlu Erişte Çorbası",
@@ -143,6 +116,15 @@
         "en": "Seasonal Vegetable Stew"
       },
       "caloriesKcal": 221
+    },
+    {
+      "id": "sehriyeli_bulgur_pilavi",
+      "name": {
+        "tr": "Şehriyeli Bulgur Pilavı",
+        "ru": "Плов",
+        "en": "Pilaf"
+      },
+      "caloriesKcal": 315
     },
     {
       "id": "yogurt",
@@ -219,15 +201,6 @@
   ],
   "menus": [
     {
-      "date": "2026-02-21",
-      "items": [
-        "elvan_corbasi",
-        "kurdak",
-        "sehriyeli_bulgur_pilavi",
-        "mevsim_salatasi"
-      ]
-    },
-    {
       "date": "2026-02-22",
       "items": [
         "eriste_corbasi",
@@ -294,6 +267,6 @@
   "meta": {
     "timezone": "Asia/Bishkek",
     "source": "manas_kantin",
-    "lastUpdated": "2026-02-21T01:23:41.203Z"
+    "lastUpdated": "2026-02-22T01:29:27.339Z"
   }
 }
