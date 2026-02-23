@@ -1,42 +1,6 @@
 {
   "foods": [
     {
-      "id": "eriste_corbasi",
-      "name": {
-        "tr": "Erişte Çorbası",
-        "ru": "Суп с лапшой",
-        "en": "Noodle Soup"
-      },
-      "caloriesKcal": 145
-    },
-    {
-      "id": "et_haslama",
-      "name": {
-        "tr": "Et Haşlama",
-        "ru": "Отварное мясо",
-        "en": "Boiled Meat"
-      },
-      "caloriesKcal": 900
-    },
-    {
-      "id": "sehriyeli_pirinc_pilavi",
-      "name": {
-        "tr": "Şehriyeli Pirinç Pilavı",
-        "ru": "Рисовый плов с вермишелью",
-        "en": "Vermicelli Rice Pilaf"
-      },
-      "caloriesKcal": 365
-    },
-    {
-      "id": "cacik",
-      "name": {
-        "tr": "Cacık",
-        "ru": "Джаджик",
-        "en": "Cacik (Yogurt Dip)"
-      },
-      "caloriesKcal": 200
-    },
-    {
       "id": "suzme_mercimek_corbasi",
       "name": {
         "tr": "Süzme Mercimek Çorbası",
@@ -53,6 +17,15 @@
         "en": "Tas Kebap"
       },
       "caloriesKcal": 343
+    },
+    {
+      "id": "sehriyeli_pirinc_pilavi",
+      "name": {
+        "tr": "Şehriyeli Pirinç Pilavı",
+        "ru": "Рисовый плов с вермишелью",
+        "en": "Vermicelli Rice Pilaf"
+      },
+      "caloriesKcal": 365
     },
     {
       "id": "mevsim_salatasi",
@@ -201,15 +174,6 @@
   ],
   "menus": [
     {
-      "date": "2026-02-22",
-      "items": [
-        "eriste_corbasi",
-        "et_haslama",
-        "sehriyeli_pirinc_pilavi",
-        "cacik"
-      ]
-    },
-    {
       "date": "2026-02-23",
       "items": [
         "suzme_mercimek_corbasi",
@@ -267,6 +231,6 @@
   "meta": {
     "timezone": "Asia/Bishkek",
     "source": "manas_kantin",
-    "lastUpdated": "2026-02-22T01:29:27.339Z"
+    "lastUpdated": "2026-02-23T01:28:46.698Z"
   }
 }
