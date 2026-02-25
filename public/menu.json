@@ -1,50 +1,6 @@
 {
   "foods": [
     {
-      "id": "yogurtlu_eriste_corbasi",
-      "name": {
-        "tr": "Yoğurtlu Erişte Çorbası",
-        "ru": "Суп",
-        "en": "Soup"
-      },
-      "calories": 146,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/yogurtlu_eriste_corbasi.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/yogurtlu_eriste_corbasi.jpg"
-    },
-    {
-      "id": "pureli_kofte",
-      "name": {
-        "tr": "Püreli Köfte",
-        "ru": "Котлеты",
-        "en": "Meatballs"
-      },
-      "calories": 328,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/pureli_kofte.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/pureli_kofte.jpg"
-    },
-    {
-      "id": "ispanakli_gul_boregi",
-      "name": {
-        "tr": "Ispanaklı Gül Böreği",
-        "ru": "Ispanaklı Gül Böreği",
-        "en": "Ispanaklı Gül Böreği"
-      },
-      "calories": 306,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/ispanakli_gul_boregi.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/ispanakli_gul_boregi.jpg"
-    },
-    {
-      "id": "seker_pare",
-      "name": {
-        "tr": "Şeker Pare",
-        "ru": "Шекерпаре",
-        "en": "Sekerpare"
-      },
-      "calories": 140,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/seker_pare.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/seker_pare.jpg"
-    },
-    {
       "id": "ezogelin_corbasi",
       "name": {
         "tr": "Ezogelin Çorbası",
@@ -201,15 +157,6 @@
   ],
   "menus": [
     {
-      "date": "2026-02-24",
-      "items": [
-        "yogurtlu_eriste_corbasi",
-        "pureli_kofte",
-        "ispanakli_gul_boregi",
-        "seker_pare"
-      ]
-    },
-    {
       "date": "2026-02-25",
       "items": [
         "ezogelin_corbasi",
@@ -249,6 +196,6 @@
   "meta": {
     "timezone": "Asia/Bishkek",
     "source": "manas_kantin",
-    "lastUpdated": "2026-02-24T01:17:36.931Z"
+    "lastUpdated": "2026-02-25T01:22:22.387Z"
   }
 }
