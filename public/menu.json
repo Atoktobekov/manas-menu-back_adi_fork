@@ -56,6 +56,42 @@
       "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/tutmac_corbasi.jpg"
     },
     {
+      "id": "mevsim_turlusu",
+      "name": {
+        "tr": "Mevsim Türlüsü",
+        "ru": "Овощное рагу (сезонное)",
+        "en": "Seasonal Vegetable Stew"
+      },
+      "caloriesKcal": 221
+    },
+    {
+      "id": "sehriyeli_bulgur_pilavi",
+      "name": {
+        "tr": "Şehriyeli Bulgur Pilavı",
+        "ru": "Плов",
+        "en": "Pilaf"
+      },
+      "caloriesKcal": 315
+    },
+    {
+      "id": "yogurt",
+      "name": {
+        "tr": "Yoğurt",
+        "ru": "Йогурт",
+        "en": "Yogurt"
+      },
+      "caloriesKcal": 158
+    },
+    {
+      "id": "tutmac_corbasi",
+      "name": {
+        "tr": "Tutmaç Çorbası",
+        "ru": "Суп Тутмач",
+        "en": "Tutmac Soup"
+      },
+      "caloriesKcal": 182
+    },
+    {
       "id": "kavurma",
       "name": {
         "tr": "Kavurma",
@@ -84,9 +120,7 @@
         "ru": "Mevsim Salatası",
         "en": "Mevsim Salatası"
       },
-      "calories": 180,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/mevsim_salatasi.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/mevsim_salatasi.jpg"
+      "caloriesKcal": 180
     },
     {
       "id": "yayla_corbasi",
@@ -117,9 +151,7 @@
         "ru": "Смешанный компот",
         "en": "Mixed Compote"
       },
-      "calories": 290,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/karisik_komposto.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/karisik_komposto.jpg"
+      "caloriesKcal": 290
     },
     {
       "id": "mercimek_corbasi",
@@ -139,9 +171,7 @@
         "ru": "Tas Kebap",
         "en": "Tas Kebap"
       },
-      "calories": 343,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/tas_kebap.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/tas_kebap.jpg"
+      "caloriesKcal": 343
     },
     {
       "id": "elma",
@@ -196,6 +226,6 @@
   "meta": {
     "timezone": "Asia/Bishkek",
     "source": "manas_kantin",
-    "lastUpdated": "2026-02-25T01:22:22.387Z"
+    "lastUpdated": "2026-02-25T01:29:39.083Z"
   }
 }
