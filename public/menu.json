@@ -1,42 +1,6 @@
 {
   "foods": [
     {
-      "id": "yogurtlu_eriste_corbasi",
-      "name": {
-        "tr": "Yoğurtlu Erişte Çorbası",
-        "ru": "Суп",
-        "en": "Soup"
-      },
-      "caloriesKcal": 146
-    },
-    {
-      "id": "pureli_kofte",
-      "name": {
-        "tr": "Püreli Köfte",
-        "ru": "Котлеты",
-        "en": "Meatballs"
-      },
-      "caloriesKcal": 328
-    },
-    {
-      "id": "ispanakli_gul_boregi",
-      "name": {
-        "tr": "Ispanaklı Gül Böreği",
-        "ru": "Ispanaklı Gül Böreği",
-        "en": "Ispanaklı Gül Böreği"
-      },
-      "caloriesKcal": 306
-    },
-    {
-      "id": "seker_pare",
-      "name": {
-        "tr": "Şeker Pare",
-        "ru": "Шекерпаре",
-        "en": "Sekerpare"
-      },
-      "caloriesKcal": 140
-    },
-    {
       "id": "ezogelin_corbasi",
       "name": {
         "tr": "Ezogelin Çorbası",
@@ -165,15 +129,6 @@
   ],
   "menus": [
     {
-      "date": "2026-02-24",
-      "items": [
-        "yogurtlu_eriste_corbasi",
-        "pureli_kofte",
-        "ispanakli_gul_boregi",
-        "seker_pare"
-      ]
-    },
-    {
       "date": "2026-02-25",
       "items": [
         "ezogelin_corbasi",
@@ -213,6 +168,6 @@
   "meta": {
     "timezone": "Asia/Bishkek",
     "source": "manas_kantin",
-    "lastUpdated": "2026-02-24T01:27:09.691Z"
+    "lastUpdated": "2026-02-25T01:29:39.083Z"
   }
 }
