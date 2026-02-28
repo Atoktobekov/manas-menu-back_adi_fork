@@ -1,50 +1,6 @@
 {
   "foods": [
     {
-      "id": "yayla_corbasi",
-      "name": {
-        "tr": "Yayla Çorbası",
-        "ru": "Суп Яйла",
-        "en": "Yayla Soup"
-      },
-      "calories": 175,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/yayla_corbasi.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/yayla_corbasi.jpg"
-    },
-    {
-      "id": "tavuk_baget_firin_patates",
-      "name": {
-        "tr": "Tavuk Baget-Fırın Patates",
-        "ru": "Куриные голени с запеченным картофелем",
-        "en": "Chicken Drumstick with Baked Potato"
-      },
-      "calories": 402,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/tavuk_baget_firin_patates.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/tavuk_baget_firin_patates.jpg"
-    },
-    {
-      "id": "sehriyeli_pirinc_pilavi",
-      "name": {
-        "tr": "Şehriyeli Pirinç Pilavı",
-        "ru": "Рисовый плов с вермишелью",
-        "en": "Vermicelli Rice Pilaf"
-      },
-      "calories": 365,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/sehriyeli_pirinc_pilavi.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/sehriyeli_pirinc_pilavi.jpg"
-    },
-    {
-      "id": "karisik_komposto",
-      "name": {
-        "tr": "Karışık Komposto",
-        "ru": "Смешанный компот",
-        "en": "Mixed Compote"
-      },
-      "calories": 290,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/karisik_komposto.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/karisik_komposto.jpg"
-    },
-    {
       "id": "mercimek_corbasi",
       "name": {
         "tr": "Mercimek Çorbası",
@@ -87,18 +43,526 @@
       "calories": 60,
       "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/elma.jpg",
       "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/elma.jpg"
+    },
+    {
+      "id": "mas_corbasi",
+      "name": {
+        "tr": "Maş Çorbası",
+        "ru": "Суп",
+        "en": "Soup"
+      },
+      "calories": 155,
+      "thumbUrl": "https://info.manas.edu.kg/uploads/kantin/foods/caqN-bC5CCSEpJPC2z8VZIeMz5JADJl0.jpg",
+      "fullPhotoUrl": "https://info.manas.edu.kg/uploads/kantin/foods/caqN-bC5CCSEpJPC2z8VZIeMz5JADJl0.jpg"
+    },
+    {
+      "id": "etli_kuru_fasulye",
+      "name": {
+        "tr": "Etli Kuru Fasulye",
+        "ru": "Фасоль с мясом",
+        "en": "White Beans with Meat"
+      },
+      "calories": 310,
+      "thumbUrl": "https://info.manas.edu.kg/uploads/kantin/foods/pabaa7jSH35TlhwxZGFI7fxRhQvEUliK.jpg",
+      "fullPhotoUrl": "https://info.manas.edu.kg/uploads/kantin/foods/pabaa7jSH35TlhwxZGFI7fxRhQvEUliK.jpg"
+    },
+    {
+      "id": "sehriyeli_pirinc_pilavi",
+      "name": {
+        "tr": "Şehriyeli Pirinç Pilavı",
+        "ru": "Рисовый плов с вермишелью",
+        "en": "Vermicelli Rice Pilaf"
+      },
+      "calories": 365,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/sehriyeli_pirinc_pilavi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/sehriyeli_pirinc_pilavi.jpg"
+    },
+    {
+      "id": "cacik",
+      "name": {
+        "tr": "Cacık",
+        "ru": "Джаджик",
+        "en": "Cacik (Yogurt Dip)"
+      },
+      "calories": 200,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/cacik.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/cacik.jpg"
+    },
+    {
+      "id": "ezogelin_corbasi",
+      "name": {
+        "tr": "Ezogelin Çorbası",
+        "ru": "Суп Эзогелин",
+        "en": "Ezogelin Soup"
+      },
+      "calories": 217,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/ezogelin_corbasi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/ezogelin_corbasi.jpg"
+    },
+    {
+      "id": "kekikli_kebap",
+      "name": {
+        "tr": "Kekikli Kebap",
+        "ru": "Кебаб с тимьяном",
+        "en": "Thyme Kebab"
+      },
+      "calories": 295,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/kekikli_kebap.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/kekikli_kebap.jpg"
+    },
+    {
+      "id": "nohutlu_ispanak_corbasi",
+      "name": {
+        "tr": "Nohutlu Ispanak Çorbası",
+        "ru": "Суп",
+        "en": "Soup"
+      },
+      "calories": 168,
+      "thumbUrl": "https://info.manas.edu.kg/uploads/kantin/foods/30.jpg",
+      "fullPhotoUrl": "https://info.manas.edu.kg/uploads/kantin/foods/30.jpg"
+    },
+    {
+      "id": "terbiyeli_kofte",
+      "name": {
+        "tr": "Terbiyeli Köfte",
+        "ru": "Котлеты",
+        "en": "Meatballs"
+      },
+      "calories": 231,
+      "thumbUrl": "https://info.manas.edu.kg/uploads/kantin/foods/175.jpg",
+      "fullPhotoUrl": "https://info.manas.edu.kg/uploads/kantin/foods/175.jpg"
+    },
+    {
+      "id": "spagetti",
+      "name": {
+        "tr": "Spagetti",
+        "ru": "Spagetti",
+        "en": "Spagetti"
+      },
+      "calories": 360,
+      "thumbUrl": "https://info.manas.edu.kg/uploads/kantin/foods/232.jpg",
+      "fullPhotoUrl": "https://info.manas.edu.kg/uploads/kantin/foods/232.jpg"
+    },
+    {
+      "id": "revani_tatlisi",
+      "name": {
+        "tr": "Revani Tatlısı",
+        "ru": "Ревани",
+        "en": "Revani Cake"
+      },
+      "calories": 323,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/revani_tatlisi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/revani_tatlisi.jpg"
+    },
+    {
+      "id": "arpa_sehriye_corbasi",
+      "name": {
+        "tr": "Arpa Şehriye Çorbası",
+        "ru": "Суп с ячменной лапшой",
+        "en": "Barley Vermicelli Soup"
+      },
+      "calories": 186,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/arpa_sehriye_corbasi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/arpa_sehriye_corbasi.jpg"
+    },
+    {
+      "id": "mevsim_turlusu",
+      "name": {
+        "tr": "Mevsim Türlüsü",
+        "ru": "Овощное рагу (сезонное)",
+        "en": "Seasonal Vegetable Stew"
+      },
+      "calories": 221,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/mevsim_turlusu.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/mevsim_turlusu.jpg"
+    },
+    {
+      "id": "yogurt",
+      "name": {
+        "tr": "Yoğurt",
+        "ru": "Йогурт",
+        "en": "Yogurt"
+      },
+      "calories": 158,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/yogurt.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/yogurt.jpg"
+    },
+    {
+      "id": "dana_rosto",
+      "name": {
+        "tr": "Dana Rosto",
+        "ru": "Dana Rosto",
+        "en": "Dana Rosto"
+      },
+      "calories": 370,
+      "thumbUrl": "https://info.manas.edu.kg/uploads/kantin/foods/69.jpg",
+      "fullPhotoUrl": "https://info.manas.edu.kg/uploads/kantin/foods/69.jpg"
+    },
+    {
+      "id": "patates_pure",
+      "name": {
+        "tr": "Patates Püre",
+        "ru": "Patates Püre",
+        "en": "Patates Püre"
+      },
+      "calories": 80,
+      "thumbUrl": "https://info.manas.edu.kg/uploads/kantin/foods/210.jpg",
+      "fullPhotoUrl": "https://info.manas.edu.kg/uploads/kantin/foods/210.jpg"
+    },
+    {
+      "id": "seker_pare",
+      "name": {
+        "tr": "Şeker Pare",
+        "ru": "Шекерпаре",
+        "en": "Sekerpare"
+      },
+      "calories": 140,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/seker_pare.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/seker_pare.jpg"
+    },
+    {
+      "id": "yogurtlu_eriste_corbasi",
+      "name": {
+        "tr": "Yoğurtlu Erişte Çorbası",
+        "ru": "Суп",
+        "en": "Soup"
+      },
+      "calories": 146,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/yogurtlu_eriste_corbasi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/yogurtlu_eriste_corbasi.jpg"
+    },
+    {
+      "id": "tavuk_baget_firin_patates",
+      "name": {
+        "tr": "Tavuk Baget-Fırın Patates",
+        "ru": "Куриные голени с запеченным картофелем",
+        "en": "Chicken Drumstick with Baked Potato"
+      },
+      "calories": 402,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/tavuk_baget_firin_patates.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/tavuk_baget_firin_patates.jpg"
+    },
+    {
+      "id": "karisik_komposto",
+      "name": {
+        "tr": "Karışık Komposto",
+        "ru": "Смешанный компот",
+        "en": "Mixed Compote"
+      },
+      "calories": 290,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/karisik_komposto.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/karisik_komposto.jpg"
+    },
+    {
+      "id": "elvan_corbasi",
+      "name": {
+        "tr": "Elvan Çorbası",
+        "ru": "Суп Эльван",
+        "en": "Elvan Soup"
+      },
+      "calories": 95,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/elvan_corbasi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/elvan_corbasi.jpg"
+    },
+    {
+      "id": "et_haslama",
+      "name": {
+        "tr": "Et Haşlama",
+        "ru": "Отварное мясо",
+        "en": "Boiled Meat"
+      },
+      "calories": 900,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/et_haslama.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/et_haslama.jpg"
+    },
+    {
+      "id": "tavuk_corbasi",
+      "name": {
+        "tr": "Tavuk Çorbası",
+        "ru": "Суп",
+        "en": "Soup"
+      },
+      "calories": 127,
+      "thumbUrl": "https://info.manas.edu.kg/uploads/kantin/foods/43.jpg",
+      "fullPhotoUrl": "https://info.manas.edu.kg/uploads/kantin/foods/43.jpg"
+    },
+    {
+      "id": "patates_musakka",
+      "name": {
+        "tr": "Patates Musakka",
+        "ru": "Patates Musakka",
+        "en": "Patates Musakka"
+      },
+      "calories": 345,
+      "thumbUrl": "https://info.manas.edu.kg/uploads/kantin/foods/130.jpg",
+      "fullPhotoUrl": "https://info.manas.edu.kg/uploads/kantin/foods/130.jpg"
+    },
+    {
+      "id": "kurdak",
+      "name": {
+        "tr": "Kurdak",
+        "ru": "Kurdak",
+        "en": "Kurdak"
+      },
+      "calories": 525,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/kurdak.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/kurdak.jpg"
+    },
+    {
+      "id": "mevsim_salatasi",
+      "name": {
+        "tr": "Mevsim Salatası",
+        "ru": "Mevsim Salatası",
+        "en": "Mevsim Salatası"
+      },
+      "calories": 180,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/mevsim_salatasi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/mevsim_salatasi.jpg"
+    },
+    {
+      "id": "tutmac_corbasi",
+      "name": {
+        "tr": "Tutmaç Çorbası",
+        "ru": "Суп Тутмач",
+        "en": "Tutmac Soup"
+      },
+      "calories": 182,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/tutmac_corbasi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/tutmac_corbasi.jpg"
+    },
+    {
+      "id": "izmir_kofte",
+      "name": {
+        "tr": "İzmir Köfte",
+        "ru": "Измирские котлеты",
+        "en": "Izmir Meatballs"
+      },
+      "calories": 365,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/izmir_kofte.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/izmir_kofte.jpg"
+    },
+    {
+      "id": "soslu_makarna",
+      "name": {
+        "tr": "Soslu Makarna",
+        "ru": "Макароны с соусом",
+        "en": "Pasta with Sauce"
+      },
+      "calories": 322,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/soslu_makarna.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/soslu_makarna.jpg"
+    },
+    {
+      "id": "yayla_corbasi",
+      "name": {
+        "tr": "Yayla Çorbası",
+        "ru": "Суп Яйла",
+        "en": "Yayla Soup"
+      },
+      "calories": 175,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/yayla_corbasi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/yayla_corbasi.jpg"
+    },
+    {
+      "id": "etli_bezelye",
+      "name": {
+        "tr": "Etli Bezelye",
+        "ru": "Etli Bezelye",
+        "en": "Etli Bezelye"
+      },
+      "calories": 298,
+      "thumbUrl": "https://info.manas.edu.kg/uploads/kantin/foods/gFeDBWviM5pHtkKDqOsTdfs4KOQzk90v.png",
+      "fullPhotoUrl": "https://info.manas.edu.kg/uploads/kantin/foods/gFeDBWviM5pHtkKDqOsTdfs4KOQzk90v.png"
+    },
+    {
+      "id": "ankara_tava",
+      "name": {
+        "tr": "Ankara Tava",
+        "ru": "Анкарская сковорода",
+        "en": "Ankara Style Pan"
+      },
+      "calories": 804,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/ankara_tava.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/ankara_tava.jpg"
+    },
+    {
+      "id": "patatesli_gul_boregi",
+      "name": {
+        "tr": "Patatesli Gül Böreği",
+        "ru": "Розовый бурек с картофелем",
+        "en": "Rose Shaped Potato Börek"
+      },
+      "calories": 310,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/patatesli_gul_boregi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/patatesli_gul_boregi.jpg"
+    },
+    {
+      "id": "etli_nohut",
+      "name": {
+        "tr": "Etli Nohut",
+        "ru": "Etli Nohut",
+        "en": "Etli Nohut"
+      },
+      "calories": 365,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/etli_nohut.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/etli_nohut.jpg"
+    },
+    {
+      "id": "bakla_corbasi",
+      "name": {
+        "tr": "Bakla Çorbası",
+        "ru": "Суп",
+        "en": "Soup"
+      },
+      "calories": 258,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/bakla_corbasi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/bakla_corbasi.jpg"
+    },
+    {
+      "id": "elbasan_tava",
+      "name": {
+        "tr": "Elbasan Tava",
+        "ru": "Эльбасан тава",
+        "en": "Elbasan Tava"
+      },
+      "calories": 398,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/elbasan_tava.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/elbasan_tava.jpg"
+    },
+    {
+      "id": "safranli_pirinc_pilavi",
+      "name": {
+        "tr": "Safranlı Pirinç Pilavı",
+        "ru": "Плов",
+        "en": "Pilaf"
+      },
+      "calories": 340,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/safranli_pirinc_pilavi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/safranli_pirinc_pilavi.jpg"
+    },
+    {
+      "id": "soslu_kofte",
+      "name": {
+        "tr": "Soslu Köfte",
+        "ru": "Котлеты",
+        "en": "Meatballs"
+      },
+      "calories": 315,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/soslu_kofte.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/soslu_kofte.jpg"
+    },
+    {
+      "id": "sebzeli_eriste_corbasi",
+      "name": {
+        "tr": "Sebzeli Erişte Çorbası",
+        "ru": "Суп",
+        "en": "Soup"
+      },
+      "calories": 145,
+      "thumbUrl": "https://info.manas.edu.kg/uploads/kantin/foods/35.jpg",
+      "fullPhotoUrl": "https://info.manas.edu.kg/uploads/kantin/foods/35.jpg"
+    },
+    {
+      "id": "kiymali_lahana",
+      "name": {
+        "tr": "Kıymalı Lahana",
+        "ru": "Kıymalı Lahana",
+        "en": "Kıymalı Lahana"
+      },
+      "calories": 240,
+      "thumbUrl": "https://info.manas.edu.kg/uploads/kantin/foods/zoVZTg1Qnpjbe6-qG8PU8yTZEaPWMIHZ.png",
+      "fullPhotoUrl": "https://info.manas.edu.kg/uploads/kantin/foods/zoVZTg1Qnpjbe6-qG8PU8yTZEaPWMIHZ.png"
+    },
+    {
+      "id": "soslu_bulgur_pilavi",
+      "name": {
+        "tr": "Soslu Bulgur Pilavı",
+        "ru": "Булгур плов с соусом",
+        "en": "Bulgur Pilaf with Sauce"
+      },
+      "calories": 315,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/soslu_bulgur_pilavi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/soslu_bulgur_pilavi.jpg"
+    },
+    {
+      "id": "sebzeli_canak_kofte",
+      "name": {
+        "tr": "Sebzeli Çanak Köfte",
+        "ru": "Котлеты",
+        "en": "Meatballs"
+      },
+      "calories": 230,
+      "thumbUrl": "https://info.manas.edu.kg/uploads/kantin/foods/143.jpg",
+      "fullPhotoUrl": "https://info.manas.edu.kg/uploads/kantin/foods/143.jpg"
+    },
+    {
+      "id": "sebzeli_kebap",
+      "name": {
+        "tr": "Sebzeli Kebap",
+        "ru": "Sebzeli Kebap",
+        "en": "Sebzeli Kebap"
+      },
+      "calories": 191,
+      "thumbUrl": "https://info.manas.edu.kg/uploads/kantin/foods/149.jpg",
+      "fullPhotoUrl": "https://info.manas.edu.kg/uploads/kantin/foods/149.jpg"
+    },
+    {
+      "id": "et_sote",
+      "name": {
+        "tr": "Et Sote",
+        "ru": "Мясное соте",
+        "en": "Meat Sauté"
+      },
+      "calories": 370,
+      "thumbUrl": "https://info.manas.edu.kg/uploads/kantin/foods/HQvjgmQ-UOQYnO7wv_65QBmHfyIRkbwR.png",
+      "fullPhotoUrl": "https://info.manas.edu.kg/uploads/kantin/foods/HQvjgmQ-UOQYnO7wv_65QBmHfyIRkbwR.png"
+    },
+    {
+      "id": "suzme_mercimek_corbasi",
+      "name": {
+        "tr": "Süzme Mercimek Çorbası",
+        "ru": "Суп",
+        "en": "Soup"
+      },
+      "calories": 176,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/suzme_mercimek_corbasi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/suzme_mercimek_corbasi.jpg"
+    },
+    {
+      "id": "lagman",
+      "name": {
+        "tr": "Lagman",
+        "ru": "Lagman",
+        "en": "Lagman"
+      },
+      "calories": 509,
+      "thumbUrl": "https://info.manas.edu.kg/uploads/kantin/foods/123.jpg",
+      "fullPhotoUrl": "https://info.manas.edu.kg/uploads/kantin/foods/123.jpg"
+    },
+    {
+      "id": "islak_kek",
+      "name": {
+        "tr": "Islak Kek",
+        "ru": "Влажный кекс",
+        "en": "Moist Cake"
+      },
+      "calories": 380,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/islak_kek.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/islak_kek.jpg"
+    },
+    {
+      "id": "firin_kofte_fri",
+      "name": {
+        "tr": "Fırın Köfte-Fri",
+        "ru": "Котлеты",
+        "en": "Meatballs"
+      },
+      "calories": 270,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/firin_kofte_fri.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/firin_kofte_fri.jpg"
     }
   ],
   "menus": [
-    {
-      "date": "2026-02-27",
-      "items": [
-        "yayla_corbasi",
-        "tavuk_baget_firin_patates",
-        "sehriyeli_pirinc_pilavi",
-        "karisik_komposto"
-      ]
-    },
     {
       "date": "2026-02-28",
       "items": [
@@ -107,11 +571,290 @@
         "sehriyeli_bulgur_pilavi",
         "elma"
       ]
+    },
+    {
+      "date": "2026-03-01",
+      "items": [
+        "mas_corbasi",
+        "etli_kuru_fasulye",
+        "sehriyeli_pirinc_pilavi",
+        "cacik"
+      ]
+    },
+    {
+      "date": "2026-03-02",
+      "items": [
+        "ezogelin_corbasi",
+        "kekikli_kebap",
+        "sehriyeli_pirinc_pilavi",
+        "elma"
+      ]
+    },
+    {
+      "date": "2026-03-03",
+      "items": [
+        "nohutlu_ispanak_corbasi",
+        "terbiyeli_kofte",
+        "spagetti",
+        "revani_tatlisi"
+      ]
+    },
+    {
+      "date": "2026-03-04",
+      "items": [
+        "arpa_sehriye_corbasi",
+        "mevsim_turlusu",
+        "sehriyeli_bulgur_pilavi",
+        "yogurt"
+      ]
+    },
+    {
+      "date": "2026-03-05",
+      "items": [
+        "mercimek_corbasi",
+        "dana_rosto",
+        "patates_pure",
+        "seker_pare"
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "items": [
+        "yogurtlu_eriste_corbasi",
+        "tavuk_baget_firin_patates",
+        "sehriyeli_pirinc_pilavi",
+        "karisik_komposto"
+      ]
+    },
+    {
+      "date": "2026-03-07",
+      "items": [
+        "elvan_corbasi",
+        "et_haslama",
+        "sehriyeli_bulgur_pilavi",
+        "cacik"
+      ]
+    },
+    {
+      "date": "2026-03-08",
+      "items": [
+        "tavuk_corbasi",
+        "patates_musakka",
+        "sehriyeli_pirinc_pilavi",
+        "yogurt"
+      ]
+    },
+    {
+      "date": "2026-03-09",
+      "items": [
+        "mercimek_corbasi",
+        "kurdak",
+        "sehriyeli_pirinc_pilavi",
+        "mevsim_salatasi"
+      ]
+    },
+    {
+      "date": "2026-03-10",
+      "items": [
+        "tutmac_corbasi",
+        "izmir_kofte",
+        "seker_pare",
+        "soslu_makarna"
+      ]
+    },
+    {
+      "date": "2026-03-11",
+      "items": [
+        "yayla_corbasi",
+        "etli_bezelye",
+        "sehriyeli_bulgur_pilavi",
+        "elma"
+      ]
+    },
+    {
+      "date": "2026-03-12",
+      "items": [
+        "elvan_corbasi",
+        "ankara_tava",
+        "patatesli_gul_boregi",
+        "yogurt"
+      ]
+    },
+    {
+      "date": "2026-03-13",
+      "items": [
+        "arpa_sehriye_corbasi",
+        "tavuk_baget_firin_patates",
+        "sehriyeli_pirinc_pilavi",
+        "karisik_komposto"
+      ]
+    },
+    {
+      "date": "2026-03-14",
+      "items": [
+        "ezogelin_corbasi",
+        "tas_kebap",
+        "sehriyeli_bulgur_pilavi",
+        "cacik"
+      ]
+    },
+    {
+      "date": "2026-03-15",
+      "items": [
+        "mercimek_corbasi",
+        "etli_nohut",
+        "sehriyeli_pirinc_pilavi",
+        "yogurt"
+      ]
+    },
+    {
+      "date": "2026-03-16",
+      "items": [
+        "bakla_corbasi",
+        "elbasan_tava",
+        "safranli_pirinc_pilavi",
+        "seker_pare"
+      ]
+    },
+    {
+      "date": "2026-03-17",
+      "items": [
+        "yayla_corbasi",
+        "soslu_kofte",
+        "sehriyeli_bulgur_pilavi",
+        "revani_tatlisi"
+      ]
+    },
+    {
+      "date": "2026-03-18",
+      "items": [
+        "mercimek_corbasi",
+        "etli_kuru_fasulye",
+        "sehriyeli_pirinc_pilavi",
+        "cacik"
+      ]
+    },
+    {
+      "date": "2026-03-19",
+      "items": [
+        "ezogelin_corbasi",
+        "etli_bezelye",
+        "sehriyeli_bulgur_pilavi",
+        "seker_pare"
+      ]
+    },
+    {
+      "date": "2026-03-20",
+      "items": [
+        "sebzeli_eriste_corbasi",
+        "tavuk_baget_firin_patates",
+        "sehriyeli_pirinc_pilavi",
+        "karisik_komposto"
+      ]
+    },
+    {
+      "date": "2026-03-21",
+      "items": [
+        "mas_corbasi",
+        "kiymali_lahana",
+        "soslu_makarna",
+        "yogurt"
+      ]
+    },
+    {
+      "date": "2026-03-22",
+      "items": [
+        "arpa_sehriye_corbasi",
+        "patates_musakka",
+        "soslu_bulgur_pilavi",
+        "yogurt"
+      ]
+    },
+    {
+      "date": "2026-03-23",
+      "items": [
+        "mercimek_corbasi",
+        "etli_nohut",
+        "sehriyeli_pirinc_pilavi",
+        "cacik"
+      ]
+    },
+    {
+      "date": "2026-03-24",
+      "items": [
+        "yogurtlu_eriste_corbasi",
+        "sebzeli_canak_kofte",
+        "spagetti",
+        "revani_tatlisi"
+      ]
+    },
+    {
+      "date": "2026-03-25",
+      "items": [
+        "ezogelin_corbasi",
+        "sebzeli_kebap",
+        "sehriyeli_pirinc_pilavi",
+        "yogurt"
+      ]
+    },
+    {
+      "date": "2026-03-26",
+      "items": [
+        "tutmac_corbasi",
+        "et_sote",
+        "sehriyeli_bulgur_pilavi",
+        "elma"
+      ]
+    },
+    {
+      "date": "2026-03-27",
+      "items": [
+        "yogurtlu_eriste_corbasi",
+        "tavuk_baget_firin_patates",
+        "sehriyeli_pirinc_pilavi",
+        "karisik_komposto"
+      ]
+    },
+    {
+      "date": "2026-03-28",
+      "items": [
+        "suzme_mercimek_corbasi",
+        "lagman",
+        "yogurt",
+        "islak_kek"
+      ]
+    },
+    {
+      "date": "2026-03-29",
+      "items": [
+        "elvan_corbasi",
+        "et_haslama",
+        "sehriyeli_bulgur_pilavi",
+        "cacik"
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "items": [
+        "suzme_mercimek_corbasi",
+        "etli_kuru_fasulye",
+        "sehriyeli_pirinc_pilavi",
+        "cacik"
+      ]
+    },
+    {
+      "date": "2026-03-31",
+      "items": [
+        "bakla_corbasi",
+        "firin_kofte_fri",
+        "soslu_bulgur_pilavi",
+        "karisik_komposto"
+      ]
     }
   ],
   "meta": {
     "timezone": "Asia/Bishkek",
     "source": "manas_kantin",
-    "lastUpdated": "2026-02-27T01:15:29.831Z"
+    "lastUpdated": "2026-02-28T01:09:47.752Z"
   }
 }
