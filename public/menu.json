@@ -1,50 +1,6 @@
 {
   "foods": [
     {
-      "id": "mercimek_corbasi",
-      "name": {
-        "tr": "Mercimek Çorbası",
-        "ru": "Чечевичный суп",
-        "en": "Lentil Soup"
-      },
-      "calories": 176,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/mercimek_corbasi.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/mercimek_corbasi.jpg"
-    },
-    {
-      "id": "tas_kebap",
-      "name": {
-        "tr": "Tas Kebap",
-        "ru": "Tas Kebap",
-        "en": "Tas Kebap"
-      },
-      "calories": 343,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/tas_kebap.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/tas_kebap.jpg"
-    },
-    {
-      "id": "sehriyeli_bulgur_pilavi",
-      "name": {
-        "tr": "Şehriyeli Bulgur Pilavı",
-        "ru": "Плов",
-        "en": "Pilaf"
-      },
-      "calories": 315,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/sehriyeli_bulgur_pilavi.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/sehriyeli_bulgur_pilavi.jpg"
-    },
-    {
-      "id": "elma",
-      "name": {
-        "tr": "Elma",
-        "ru": "Elma",
-        "en": "Elma"
-      },
-      "calories": 60,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/elma.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/elma.jpg"
-    },
-    {
       "id": "mas_corbasi",
       "name": {
         "tr": "Maş Çorbası",
@@ -109,6 +65,17 @@
       "calories": 295,
       "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/kekikli_kebap.jpg",
       "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/kekikli_kebap.jpg"
+    },
+    {
+      "id": "elma",
+      "name": {
+        "tr": "Elma",
+        "ru": "Elma",
+        "en": "Elma"
+      },
+      "calories": 60,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/elma.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/elma.jpg"
     },
     {
       "id": "nohutlu_ispanak_corbasi",
@@ -177,6 +144,17 @@
       "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/mevsim_turlusu.jpg"
     },
     {
+      "id": "sehriyeli_bulgur_pilavi",
+      "name": {
+        "tr": "Şehriyeli Bulgur Pilavı",
+        "ru": "Плов",
+        "en": "Pilaf"
+      },
+      "calories": 315,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/sehriyeli_bulgur_pilavi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/sehriyeli_bulgur_pilavi.jpg"
+    },
+    {
       "id": "yogurt",
       "name": {
         "tr": "Yoğurt",
@@ -186,6 +164,17 @@
       "calories": 158,
       "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/yogurt.jpg",
       "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/yogurt.jpg"
+    },
+    {
+      "id": "mercimek_corbasi",
+      "name": {
+        "tr": "Mercimek Çorbası",
+        "ru": "Чечевичный суп",
+        "en": "Lentil Soup"
+      },
+      "calories": 176,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/mercimek_corbasi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/mercimek_corbasi.jpg"
     },
     {
       "id": "dana_rosto",
@@ -397,6 +386,17 @@
       "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/patatesli_gul_boregi.jpg"
     },
     {
+      "id": "tas_kebap",
+      "name": {
+        "tr": "Tas Kebap",
+        "ru": "Tas Kebap",
+        "en": "Tas Kebap"
+      },
+      "calories": 343,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/tas_kebap.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/tas_kebap.jpg"
+    },
+    {
       "id": "etli_nohut",
       "name": {
         "tr": "Etli Nohut",
@@ -563,15 +563,6 @@
     }
   ],
   "menus": [
-    {
-      "date": "2026-02-28",
-      "items": [
-        "mercimek_corbasi",
-        "tas_kebap",
-        "sehriyeli_bulgur_pilavi",
-        "elma"
-      ]
-    },
     {
       "date": "2026-03-01",
       "items": [
@@ -855,6 +846,6 @@
   "meta": {
     "timezone": "Asia/Bishkek",
     "source": "manas_kantin",
-    "lastUpdated": "2026-02-28T01:09:47.752Z"
+    "lastUpdated": "2026-03-01T01:25:11.515Z"
   }
 }
