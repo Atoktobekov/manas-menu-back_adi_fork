@@ -1,50 +1,6 @@
 {
   "foods": [
     {
-      "id": "mercimek_corbasi",
-      "name": {
-        "tr": "Mercimek Çorbası",
-        "ru": "Чечевичный суп",
-        "en": "Lentil Soup"
-      },
-      "calories": 176,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/mercimek_corbasi.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/mercimek_corbasi.jpg"
-    },
-    {
-      "id": "dana_rosto",
-      "name": {
-        "tr": "Dana Rosto",
-        "ru": "Dana Rosto",
-        "en": "Dana Rosto"
-      },
-      "calories": 370,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/dana_rosto.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/dana_rosto.jpg"
-    },
-    {
-      "id": "patates_pure",
-      "name": {
-        "tr": "Patates Püre",
-        "ru": "Patates Püre",
-        "en": "Patates Püre"
-      },
-      "calories": 80,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/patates_pure.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/patates_pure.jpg"
-    },
-    {
-      "id": "seker_pare",
-      "name": {
-        "tr": "Şeker Pare",
-        "ru": "Шекерпаре",
-        "en": "Sekerpare"
-      },
-      "calories": 140,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/seker_pare.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/seker_pare.jpg"
-    },
-    {
       "id": "yogurtlu_eriste_corbasi",
       "name": {
         "tr": "Yoğurtlu Erişte Çorbası",
@@ -166,6 +122,17 @@
       "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/yogurt.jpg"
     },
     {
+      "id": "mercimek_corbasi",
+      "name": {
+        "tr": "Mercimek Çorbası",
+        "ru": "Чечевичный суп",
+        "en": "Lentil Soup"
+      },
+      "calories": 176,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/mercimek_corbasi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/mercimek_corbasi.jpg"
+    },
+    {
       "id": "kurdak",
       "name": {
         "tr": "Kurdak",
@@ -208,6 +175,17 @@
       "calories": 365,
       "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/izmir_kofte.jpg",
       "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/izmir_kofte.jpg"
+    },
+    {
+      "id": "seker_pare",
+      "name": {
+        "tr": "Şeker Pare",
+        "ru": "Шекерпаре",
+        "en": "Sekerpare"
+      },
+      "calories": 140,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/seker_pare.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/seker_pare.jpg"
     },
     {
       "id": "soslu_makarna",
@@ -520,15 +498,6 @@
   ],
   "menus": [
     {
-      "date": "2026-03-05",
-      "items": [
-        "mercimek_corbasi",
-        "dana_rosto",
-        "patates_pure",
-        "seker_pare"
-      ]
-    },
-    {
       "date": "2026-03-06",
       "items": [
         "yogurtlu_eriste_corbasi",
@@ -766,6 +735,6 @@
   "meta": {
     "timezone": "Asia/Bishkek",
     "source": "manas_kantin",
-    "lastUpdated": "2026-03-05T01:17:57.890Z"
+    "lastUpdated": "2026-03-06T01:21:16.050Z"
   }
 }
