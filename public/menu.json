@@ -1,50 +1,6 @@
 {
   "foods": [
     {
-      "id": "mercimek_corbasi",
-      "name": {
-        "tr": "Mercimek Çorbası",
-        "ru": "Чечевичный суп",
-        "en": "Lentil Soup"
-      },
-      "calories": 176,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/mercimek_corbasi.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/mercimek_corbasi.jpg"
-    },
-    {
-      "id": "etli_nohut",
-      "name": {
-        "tr": "Etli Nohut",
-        "ru": "Etli Nohut",
-        "en": "Etli Nohut"
-      },
-      "calories": 365,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/etli_nohut.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/etli_nohut.jpg"
-    },
-    {
-      "id": "sehriyeli_pirinc_pilavi",
-      "name": {
-        "tr": "Şehriyeli Pirinç Pilavı",
-        "ru": "Рисовый плов с вермишелью",
-        "en": "Vermicelli Rice Pilaf"
-      },
-      "calories": 365,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/sehriyeli_pirinc_pilavi.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/sehriyeli_pirinc_pilavi.jpg"
-    },
-    {
-      "id": "yogurt",
-      "name": {
-        "tr": "Yoğurt",
-        "ru": "Йогурт",
-        "en": "Yogurt"
-      },
-      "calories": 158,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/yogurt.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/yogurt.jpg"
-    },
-    {
       "id": "bakla_corbasi",
       "name": {
         "tr": "Bakla Çorbası",
@@ -133,6 +89,17 @@
       "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/revani_tatlisi.jpg"
     },
     {
+      "id": "mercimek_corbasi",
+      "name": {
+        "tr": "Mercimek Çorbası",
+        "ru": "Чечевичный суп",
+        "en": "Lentil Soup"
+      },
+      "calories": 176,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/mercimek_corbasi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/mercimek_corbasi.jpg"
+    },
+    {
       "id": "etli_kuru_fasulye",
       "name": {
         "tr": "Etli Kuru Fasulye",
@@ -142,6 +109,17 @@
       "calories": 310,
       "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/etli_kuru_fasulye.jpg",
       "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/etli_kuru_fasulye.jpg"
+    },
+    {
+      "id": "sehriyeli_pirinc_pilavi",
+      "name": {
+        "tr": "Şehriyeli Pirinç Pilavı",
+        "ru": "Рисовый плов с вермишелью",
+        "en": "Vermicelli Rice Pilaf"
+      },
+      "calories": 365,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/sehriyeli_pirinc_pilavi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/sehriyeli_pirinc_pilavi.jpg"
     },
     {
       "id": "cacik",
@@ -243,6 +221,17 @@
       "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/soslu_makarna.jpg"
     },
     {
+      "id": "yogurt",
+      "name": {
+        "tr": "Yoğurt",
+        "ru": "Йогурт",
+        "en": "Yogurt"
+      },
+      "calories": 158,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/yogurt.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/yogurt.jpg"
+    },
+    {
       "id": "arpa_sehriye_corbasi",
       "name": {
         "tr": "Arpa Şehriye Çorbası",
@@ -274,6 +263,17 @@
       "calories": 315,
       "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/soslu_bulgur_pilavi.jpg",
       "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/soslu_bulgur_pilavi.jpg"
+    },
+    {
+      "id": "etli_nohut",
+      "name": {
+        "tr": "Etli Nohut",
+        "ru": "Etli Nohut",
+        "en": "Etli Nohut"
+      },
+      "calories": 365,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/etli_nohut.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/etli_nohut.jpg"
     },
     {
       "id": "yogurtlu_eriste_corbasi",
@@ -420,15 +420,6 @@
     }
   ],
   "menus": [
-    {
-      "date": "2026-03-15",
-      "items": [
-        "mercimek_corbasi",
-        "etli_nohut",
-        "sehriyeli_pirinc_pilavi",
-        "yogurt"
-      ]
-    },
     {
       "date": "2026-03-16",
       "items": [
@@ -577,6 +568,6 @@
   "meta": {
     "timezone": "Asia/Bishkek",
     "source": "manas_kantin",
-    "lastUpdated": "2026-03-15T01:27:33.655Z"
+    "lastUpdated": "2026-03-16T01:27:05.818Z"
   }
 }
