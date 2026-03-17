@@ -1,50 +1,6 @@
 {
   "foods": [
     {
-      "id": "bakla_corbasi",
-      "name": {
-        "tr": "Bakla Çorbası",
-        "ru": "Суп",
-        "en": "Soup"
-      },
-      "calories": 258,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/bakla_corbasi.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/bakla_corbasi.jpg"
-    },
-    {
-      "id": "elbasan_tava",
-      "name": {
-        "tr": "Elbasan Tava",
-        "ru": "Эльбасан тава",
-        "en": "Elbasan Tava"
-      },
-      "calories": 398,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/elbasan_tava.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/elbasan_tava.jpg"
-    },
-    {
-      "id": "safranli_pirinc_pilavi",
-      "name": {
-        "tr": "Safranlı Pirinç Pilavı",
-        "ru": "Плов",
-        "en": "Pilaf"
-      },
-      "calories": 340,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/safranli_pirinc_pilavi.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/safranli_pirinc_pilavi.jpg"
-    },
-    {
-      "id": "seker_pare",
-      "name": {
-        "tr": "Şeker Pare",
-        "ru": "Шекерпаре",
-        "en": "Sekerpare"
-      },
-      "calories": 140,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/seker_pare.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/seker_pare.jpg"
-    },
-    {
       "id": "yayla_corbasi",
       "name": {
         "tr": "Yayla Çorbası",
@@ -153,6 +109,17 @@
       "calories": 298,
       "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/etli_bezelye.jpg",
       "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/etli_bezelye.jpg"
+    },
+    {
+      "id": "seker_pare",
+      "name": {
+        "tr": "Şeker Pare",
+        "ru": "Шекерпаре",
+        "en": "Sekerpare"
+      },
+      "calories": 140,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/seker_pare.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/seker_pare.jpg"
     },
     {
       "id": "sebzeli_eriste_corbasi",
@@ -408,6 +375,17 @@
       "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/et_haslama.jpg"
     },
     {
+      "id": "bakla_corbasi",
+      "name": {
+        "tr": "Bakla Çorbası",
+        "ru": "Суп",
+        "en": "Soup"
+      },
+      "calories": 258,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/bakla_corbasi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/bakla_corbasi.jpg"
+    },
+    {
       "id": "firin_kofte_fri",
       "name": {
         "tr": "Fırın Köfte-Fri",
@@ -420,15 +398,6 @@
     }
   ],
   "menus": [
-    {
-      "date": "2026-03-16",
-      "items": [
-        "bakla_corbasi",
-        "elbasan_tava",
-        "safranli_pirinc_pilavi",
-        "seker_pare"
-      ]
-    },
     {
       "date": "2026-03-17",
       "items": [
@@ -568,6 +537,6 @@
   "meta": {
     "timezone": "Asia/Bishkek",
     "source": "manas_kantin",
-    "lastUpdated": "2026-03-16T01:27:05.818Z"
+    "lastUpdated": "2026-03-17T01:18:47.389Z"
   }
 }
