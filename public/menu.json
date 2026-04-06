@@ -1,50 +1,6 @@
 {
   "foods": [
     {
-      "id": "arpa_sehriye_corbasi",
-      "name": {
-        "tr": "Arpa Şehriye Çorbası",
-        "ru": "Суп с ячменной лапшой",
-        "en": "Barley Vermicelli Soup"
-      },
-      "calories": 186,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/arpa_sehriye_corbasi.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/arpa_sehriye_corbasi.jpg"
-    },
-    {
-      "id": "patates_musakka",
-      "name": {
-        "tr": "Patates Musakka",
-        "ru": "Patates Musakka",
-        "en": "Patates Musakka"
-      },
-      "calories": 345,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/patates_musakka.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/patates_musakka.jpg"
-    },
-    {
-      "id": "soslu_makarna",
-      "name": {
-        "tr": "Soslu Makarna",
-        "ru": "Макароны с соусом",
-        "en": "Pasta with Sauce"
-      },
-      "calories": 322,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/soslu_makarna.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/soslu_makarna.jpg"
-    },
-    {
-      "id": "yogurt",
-      "name": {
-        "tr": "Yoğurt",
-        "ru": "Йогурт",
-        "en": "Yogurt"
-      },
-      "calories": 158,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/yogurt.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/yogurt.jpg"
-    },
-    {
       "id": "suzme_mercimek_corbasi",
       "name": {
         "tr": "Süzme Mercimek Çorbası",
@@ -133,6 +89,17 @@
       "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/islak_kek.jpg"
     },
     {
+      "id": "arpa_sehriye_corbasi",
+      "name": {
+        "tr": "Arpa Şehriye Çorbası",
+        "ru": "Суп с ячменной лапшой",
+        "en": "Barley Vermicelli Soup"
+      },
+      "calories": 186,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/arpa_sehriye_corbasi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/arpa_sehriye_corbasi.jpg"
+    },
+    {
       "id": "karnabahar_musakka",
       "name": {
         "tr": "Karnabahar Musakka",
@@ -153,6 +120,17 @@
       "calories": 310,
       "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/patatesli_gul_boregi.jpg",
       "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/patatesli_gul_boregi.jpg"
+    },
+    {
+      "id": "yogurt",
+      "name": {
+        "tr": "Yoğurt",
+        "ru": "Йогурт",
+        "en": "Yogurt"
+      },
+      "calories": 158,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/yogurt.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/yogurt.jpg"
     },
     {
       "id": "ispanakli_nohut_corbasi",
@@ -331,6 +309,17 @@
       "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/pirincli_kofte.jpg"
     },
     {
+      "id": "soslu_makarna",
+      "name": {
+        "tr": "Soslu Makarna",
+        "ru": "Макароны с соусом",
+        "en": "Pasta with Sauce"
+      },
+      "calories": 322,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/soslu_makarna.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/soslu_makarna.jpg"
+    },
+    {
       "id": "revani_tatlisi",
       "name": {
         "tr": "Revani Tatlısı",
@@ -351,6 +340,17 @@
       "calories": 127,
       "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/tavuk_corbasi.jpg",
       "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/tavuk_corbasi.jpg"
+    },
+    {
+      "id": "patates_musakka",
+      "name": {
+        "tr": "Patates Musakka",
+        "ru": "Patates Musakka",
+        "en": "Patates Musakka"
+      },
+      "calories": 345,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/patates_musakka.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/patates_musakka.jpg"
     },
     {
       "id": "sebzeli_kebap",
@@ -563,15 +563,6 @@
     }
   ],
   "menus": [
-    {
-      "date": "2026-04-05",
-      "items": [
-        "arpa_sehriye_corbasi",
-        "patates_musakka",
-        "soslu_makarna",
-        "yogurt"
-      ]
-    },
     {
       "date": "2026-04-06",
       "items": [
@@ -801,6 +792,6 @@
   "meta": {
     "timezone": "Asia/Bishkek",
     "source": "manas_kantin",
-    "lastUpdated": "2026-04-05T01:44:22.496Z"
+    "lastUpdated": "2026-04-06T01:44:57.951Z"
   }
 }
