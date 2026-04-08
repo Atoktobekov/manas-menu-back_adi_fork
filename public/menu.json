@@ -1,50 +1,6 @@
 {
   "foods": [
     {
-      "id": "yayla_corbasi",
-      "name": {
-        "tr": "Yayla Çorbası",
-        "ru": "Суп Яйла",
-        "en": "Yayla Soup"
-      },
-      "calories": 175,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/yayla_corbasi.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/yayla_corbasi.jpg"
-    },
-    {
-      "id": "pureli_kofte",
-      "name": {
-        "tr": "Püreli Köfte",
-        "ru": "Котлеты",
-        "en": "Meatballs"
-      },
-      "calories": 328,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/pureli_kofte.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/pureli_kofte.jpg"
-    },
-    {
-      "id": "spagetti",
-      "name": {
-        "tr": "Spagetti",
-        "ru": "Spagetti",
-        "en": "Spagetti"
-      },
-      "calories": 360,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/spagetti.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/spagetti.jpg"
-    },
-    {
-      "id": "islak_kek",
-      "name": {
-        "tr": "Islak Kek",
-        "ru": "Влажный кекс",
-        "en": "Moist Cake"
-      },
-      "calories": 380,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/islak_kek.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/islak_kek.jpg"
-    },
-    {
       "id": "arpa_sehriye_corbasi",
       "name": {
         "tr": "Arpa Şehriye Çorbası",
@@ -232,6 +188,17 @@
       "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/ozbek_pilavi.jpg"
     },
     {
+      "id": "islak_kek",
+      "name": {
+        "tr": "Islak Kek",
+        "ru": "Влажный кекс",
+        "en": "Moist Cake"
+      },
+      "calories": 380,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/islak_kek.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/islak_kek.jpg"
+    },
+    {
       "id": "ezogelin_corbasi",
       "name": {
         "tr": "Ezogelin Çorbası",
@@ -329,6 +296,17 @@
       "calories": 345,
       "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/patates_musakka.jpg",
       "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/patates_musakka.jpg"
+    },
+    {
+      "id": "yayla_corbasi",
+      "name": {
+        "tr": "Yayla Çorbası",
+        "ru": "Суп Яйла",
+        "en": "Yayla Soup"
+      },
+      "calories": 175,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/yayla_corbasi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/yayla_corbasi.jpg"
     },
     {
       "id": "sebzeli_kebap",
@@ -564,15 +542,6 @@
   ],
   "menus": [
     {
-      "date": "2026-04-07",
-      "items": [
-        "yayla_corbasi",
-        "pureli_kofte",
-        "spagetti",
-        "islak_kek"
-      ]
-    },
-    {
       "date": "2026-04-08",
       "items": [
         "arpa_sehriye_corbasi",
@@ -783,6 +752,6 @@
   "meta": {
     "timezone": "Asia/Bishkek",
     "source": "manas_kantin",
-    "lastUpdated": "2026-04-07T01:28:17.866Z"
+    "lastUpdated": "2026-04-08T01:28:44.539Z"
   }
 }
