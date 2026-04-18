@@ -1,104 +1,96 @@
-# back-manas
+# Manas Menu Data Scraper
 
-Backend for Manas University cafeteria menu. Scrapes the daily cafeteria menu and kiraathane (cafe) menu from [beslenme.manas.edu.kg](https://beslenme.manas.edu.kg) and serves it as a JSON API with translations in Turkish, Russian, and English.
+A Node.js scraper that collects daily cafeteria and buffet data from [beslenme.manas.edu.kg](https://beslenme.manas.edu.kg), normalizes it, and saves versioned JSON snapshots into this repository.
 
-## Prerequisites
+This project is designed for **static delivery** (for example via Vercel/GitHub Pages/CDN), not as a long-running backend server.
 
-- **Node.js** v18 or higher (the project uses ES modules and the `--watch` flag)
+## What this repository provides
 
-## Installing Node.js
+- `public/menu.json` — university cafeteria menu (foods, multilingual names, calories, photos, daily menu mapping).
+- `public/buffet.json` — kiraathane/buffet menu (categories, items, prices, photos).
+- Automated daily updates via GitHub Actions.
 
-### macOS
+## Data sources
 
-Using Homebrew:
+- Cafeteria menu page: `https://beslenme.manas.edu.kg/menu`
+- Kiraathane page: `https://beslenme.manas.edu.kg/1`
 
-```bash
-brew install node
+## Project structure
+
+```text
+public/
+  config.js                   # source URLs + common meta
+  index.js                    # entry point; runs JSON generation
+  services/saveJsonFiles.js   # writes menu.json and buffet.json
+  parsers/menuParser.js       # parser for cafeteria menu
+  parsers/kiraathaneParser.js # parser for buffet/kiraathane menu
+  utils/generateId.js         # slug/id generation
+  utils/translateFood.js      # food and category translations
+  menu.json                   # generated output
+  buffet.json                 # generated output
+.github/workflows/update_menu.yml  # daily automation
 ```
 
-Or using the official installer — download from [nodejs.org](https://nodejs.org/) and run the `.pkg` file.
+## Requirements
 
-### Ubuntu / Debian
+- Node.js 18+ (Node.js 20 is used in CI)
+- npm
 
-```bash
-curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
-sudo apt-get install -y nodejs
-```
-
-### Windows
-
-Download the installer from [nodejs.org](https://nodejs.org/) and run it. This will install both Node.js and npm.
-
-### Verify installation
-
-```bash
-node -v
-npm -v
-```
-
-## Installation
-
-1. Clone the repository:
-
-```bash
-git clone <repository-url>
-cd back-manas
-```
-
-2. Install dependencies:
+## Install
 
 ```bash
 npm install
 ```
 
-## Running
+## Run locally
 
-Development mode (auto-restart on file changes):
-
-```bash
-npm run dev
-```
-
-Production mode:
+Generate fresh JSON files:
 
 ```bash
 npm start
 ```
 
-The server starts on `http://localhost:3000` by default. Set the `PORT` environment variable to change it:
+Run in watch mode (re-generates when source files change):
 
 ```bash
-PORT=8080 npm start
+npm run dev
 ```
 
-## API Endpoints
+After running, check:
 
-| Endpoint | Description |
-|---|---|
-| `GET /menu` | Weekly cafeteria menu with food names (tr/ru/en) and calorie info |
-| `GET /kiraathane` | Kiraathane (cafe) menu with categories and prices (KGS) |
-| `GET /health` | Health check |
+- `public/menu.json`
+- `public/buffet.json`
 
-### Example: `GET /menu`
+## Automation
+
+The workflow `.github/workflows/update_menu.yml` runs:
+
+- **daily at `0 0 * * *` (00:00 UTC)**
+- and manually via **workflow_dispatch**
+
+Pipeline steps:
+
+1. Install dependencies.
+2. Run parser (`node public/index.js`).
+3. Commit and push `public/menu.json` and `public/buffet.json` if they changed.
+
+## Output format (high level)
+
+### `menu.json`
 
 ```json
 {
   "foods": [
     {
-      "id": "mercimek_corbasi",
-      "name": {
-        "tr": "Mercimek Çorbası",
-        "ru": "Чечевичный суп",
-        "en": "Lentil Soup"
-      },
-      "caloriesKcal": 150
+        "id": "...",
+      "name": { "tr": "...", "ru": "...", "en": "..." },
+      "calories": 0,
+      "thumbUrl": "...",
+      "fullPhotoUrl": "..."
     }
   ],
   "menus": [
-    {
-      "date": "2025-02-10",
-      "items": ["mercimek_corbasi", "izgara_tavuk", "pirinc_pilavi"]
-    }
+   { "date": "YYYY-MM-DD", "items": ["food_id_1", "food_id_2"] }
   ],
   "meta": {
     "timezone": "Asia/Bishkek",
@@ -108,16 +100,16 @@ PORT=8080 npm start
 }
 ```
 
-### Example: `GET /kiraathane`
+### `buffet.json`
 
 ```json
 {
   "categories": [
     {
-      "id": "hot_drinks",
-      "title": "Горячие напитки",
+       "id": "...",
+      "title": "...",
       "items": [
-        { "id": "cay", "name": "ÇAY", "price": 20 }
+         { "id": "...", "name": "...", "price": 0, "photoUrl": "..." }
       ]
     }
   ],
@@ -129,8 +121,12 @@ PORT=8080 npm start
 }
 ```
 
-## Tech Stack
+## Notes
 
-- **Express** — HTTP server
-- **Axios** — HTTP client for scraping
-- **Cheerio** — HTML parsing
+- Food/category text is parsed from source HTML and partially translated in `public/utils/translateFood.js`.
+- Photos are resolved using CDN manifests (`public/manifest.json` and `public/buffet_manifest.json`) with fallback to source image URLs.
+- If the source website structure changes, parser selectors may need updates.
+
+## License
+
+No license file is currently defined in this repository.
