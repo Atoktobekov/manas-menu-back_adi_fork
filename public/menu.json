@@ -1,50 +1,6 @@
 {
   "foods": [
     {
-      "id": "bakla_corbasi",
-      "name": {
-        "tr": "Bakla Çorbası",
-        "ru": "Суп",
-        "en": "Soup"
-      },
-      "calories": 258,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/bakla_corbasi.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/bakla_corbasi.jpg"
-    },
-    {
-      "id": "dalyan_kofte",
-      "name": {
-        "tr": "Dalyan Köfte",
-        "ru": "Котлеты",
-        "en": "Meatballs"
-      },
-      "calories": 498,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/dalyan_kofte.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/dalyan_kofte.jpg"
-    },
-    {
-      "id": "patates_pure",
-      "name": {
-        "tr": "Patates Püre",
-        "ru": "Patates Püre",
-        "en": "Patates Püre"
-      },
-      "calories": 80,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/patates_pure.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/patates_pure.jpg"
-    },
-    {
-      "id": "sutlac",
-      "name": {
-        "tr": "Sütlaç",
-        "ru": "Сютлач (рисовый пудинг)",
-        "en": "Rice Pudding"
-      },
-      "calories": 140,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/sutlac.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/sutlac.jpg"
-    },
-    {
       "id": "makarnali_yesil_mercimek_corbasi",
       "name": {
         "tr": "Makarnalı Yeşil Mercimek Çorbası",
@@ -333,15 +289,6 @@
   ],
   "menus": [
     {
-      "date": "2026-04-21",
-      "items": [
-        "bakla_corbasi",
-        "dalyan_kofte",
-        "patates_pure",
-        "sutlac"
-      ]
-    },
-    {
       "date": "2026-04-22",
       "items": [
         "makarnali_yesil_mercimek_corbasi",
@@ -426,6 +373,6 @@
   "meta": {
     "timezone": "Asia/Bishkek",
     "source": "manas_kantin",
-    "lastUpdated": "2026-04-21T01:48:51.146Z"
+    "lastUpdated": "2026-04-22T05:42:55.182Z"
   }
 }
