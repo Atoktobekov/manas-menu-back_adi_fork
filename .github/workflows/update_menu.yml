@@ -7,16 +7,18 @@ on:
 
 permissions:
   contents: write
-  
+
 env:
   NODE_TLS_REJECT_UNAUTHORIZED: '0'
-  API_TOKEN: ${{ secrets.MY_API_TOKEN }} 
+  API_TOKEN: ${{ secrets.MY_API_TOKEN }}
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -28,7 +30,10 @@ jobs:
         run: npm install
 
       - name: Run Lint
-        run: npx eslint .  echo "Линтер нашел ошибки, но продолжаем для теста"
+        run: |
+          if ! npx eslint .; then
+            echo "Линтер нашел ошибки, но продолжаем для теста"
+          fi
 
       - name: Run parser
         run: |
@@ -40,20 +45,27 @@ jobs:
         with:
           name: menu-data-reports
           path: public/*.json
+          if-no-files-found: warn
 
       - name: Debug git
         run: |
           git status
           git diff
-    
+
       - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
           git add public/menu.json public/buffet.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: automated menu update $(date)" && git push)
+
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: automated menu update $(date)"
+            git push
+          else
+            echo "No changes to commit"
+          fi
 
       - name: Notify on Failure
         if: failure()
         run: echo "Пайплайн упал! Отправка уведомления команде..."
-        # Сюда обычно вставляется curl запрос в Telegram или Slack
