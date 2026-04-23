@@ -38,20 +38,20 @@ jobs:
           EXIT_CODE=$?
 
           if [ $EXIT_CODE -ne 0 ]; then
-            echo "status=failed" >> $GITHUB_OUTPUT
-            echo "LINT_STATUS=failed" >> $GITHUB_ENV
+            echo "status=failed" >> "$GITHUB_OUTPUT"
+            echo "LINT_STATUS=failed" >> "$GITHUB_ENV"
             echo "Линтер нашел ошибки, но workflow продолжается"
           else
-            echo "status=passed" >> $GITHUB_OUTPUT
-            echo "LINT_STATUS=passed" >> $GITHUB_ENV
+            echo "status=passed" >> "$GITHUB_OUTPUT"
+            echo "LINT_STATUS=passed" >> "$GITHUB_ENV"
             echo "ESLint passed successfully"
           fi
 
-          echo "### Lint result: $([ $EXIT_CODE -eq 0 ] && echo 'passed ✅' || echo 'failed ⚠️')" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo '```' >> $GITHUB_STEP_SUMMARY
-          tail -n 50 lint-report.txt >> $GITHUB_STEP_SUMMARY || true
-          echo '```' >> $GITHUB_STEP_SUMMARY
+          echo "### Lint result: $([ $EXIT_CODE -eq 0 ] && echo 'passed ✅' || echo 'failed ⚠️')" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          tail -n 50 lint-report.txt >> "$GITHUB_STEP_SUMMARY" || true
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
 
           exit 0
 
@@ -64,13 +64,15 @@ jobs:
       - name: Collect file info
         id: fileinfo
         run: |
-          echo "Generated files:" > file-report.txt
-          ls -lh public/*.json >> file-report.txt 2>/dev/null || echo "No JSON files found" >> file-report.txt
+          {
+            echo "Generated files:"
+            ls -lh public/*.json 2>/dev/null || echo "No JSON files found"
+          } > file-report.txt
 
-          echo "### Generated artifacts" >> $GITHUB_STEP_SUMMARY
-          echo '```' >> $GITHUB_STEP_SUMMARY
-          cat file-report.txt >> $GITHUB_STEP_SUMMARY
-          echo '```' >> $GITHUB_STEP_SUMMARY
+          echo "### Generated artifacts" >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          cat file-report.txt >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
 
       - name: Save Artifacts
         uses: actions/upload-artifact@v4
@@ -93,57 +95,68 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add public/menu.json public/buffet.json
+          git add public/*.json
 
           if ! git diff --cached --quiet; then
             git commit -m "chore: automated menu update $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
             git push
-            echo "changed=true" >> $GITHUB_OUTPUT
-            echo "CHANGED=true" >> $GITHUB_ENV
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "CHANGED=true" >> "$GITHUB_ENV"
           else
             echo "No changes to commit"
-            echo "changed=false" >> $GITHUB_OUTPUT
-            echo "CHANGED=false" >> $GITHUB_ENV
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "CHANGED=false" >> "$GITHUB_ENV"
           fi
 
       - name: Notify Telegram on Success
         if: success()
         run: |
+          MESSAGE=$(cat <<EOF
+          ✅ Workflow succeeded
+
+          Repository: ${{ github.repository }}
+          Workflow: ${{ github.workflow }}
+          Run #: ${{ github.run_number }}
+          Branch: ${{ github.ref_name }}
+          Actor: ${{ github.actor }}
+          Lint: ${{ env.LINT_STATUS }}
+          Files changed: ${{ env.CHANGED }}
+
+          Artifacts:
+          $(cat file-report.txt)
+
+          Logs:
+          https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          EOF
+          )
+
           curl -s -X POST "https://api.telegram.org/bot${{ secrets.TG_BOT_TOKEN }}/sendMessage" \
             -d chat_id="${{ secrets.TG_CHAT_ID }}" \
-            --data-urlencode "text=✅ Workflow succeeded
-
-Repository: ${{ github.repository }}
-Workflow: ${{ github.workflow }}
-Run #: ${{ github.run_number }}
-Branch: ${{ github.ref_name }}
-Actor: ${{ github.actor }}
-Lint: ${{ env.LINT_STATUS }}
-Files changed: ${{ env.CHANGED }}
-
-Artifacts:
-$(cat file-report.txt)
-
-Logs:
-https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            --data-urlencode "text=${MESSAGE}"
 
       - name: Notify Telegram on Failure
         if: failure()
         run: |
           SHORT_LINT_LOG=$(tail -n 15 lint-report.txt 2>/dev/null || echo "No lint log available")
+
+          MESSAGE=$(cat <<EOF
+          ❌ Workflow failed
+
+          Repository: ${{ github.repository }}
+          Workflow: ${{ github.workflow }}
+          Run #: ${{ github.run_number }}
+          Branch: ${{ github.ref_name }}
+          Actor: ${{ github.actor }}
+          Lint: ${{ env.LINT_STATUS }}
+
+          Recent lint log:
+          ${SHORT_LINT_LOG}
+
+          Logs:
+          https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          EOF
+          )
+
           curl -s -X POST "https://api.telegram.org/bot${{ secrets.TG_BOT_TOKEN }}/sendMessage" \
             -d chat_id="${{ secrets.TG_CHAT_ID }}" \
-            --data-urlencode "text=❌ Workflow failed
-
-Repository: ${{ github.repository }}
-Workflow: ${{ github.workflow }}
-Run #: ${{ github.run_number }}
-Branch: ${{ github.ref_name }}
-Actor: ${{ github.actor }}
-Lint: ${{ env.LINT_STATUS }}
-
-Recent lint log:
-$SHORT_LINT_LOG
-
-Logs:
-https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            --data-urlencode "text=${MESSAGE}"
