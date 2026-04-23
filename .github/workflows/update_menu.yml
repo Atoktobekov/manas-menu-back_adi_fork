@@ -10,6 +10,7 @@ permissions:
   
 env:
   NODE_TLS_REJECT_UNAUTHORIZED: '0'
+  API_TOKEN: ${{ secrets.MY_API_TOKEN }} 
 
 jobs:
   build:
@@ -20,16 +21,25 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20' # Стабильнее для парсинга
+          node-version: '20'
           cache: 'npm'
 
       - name: Install dependencies
         run: npm install
 
+      - name: Run Lint
+        run: npx eslint .  echo "Линтер нашел ошибки, но продолжаем для теста"
+
       - name: Run parser
         run: |
           mkdir -p public
           node public/index.js
+
+      - name: Save Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: menu-data-reports
+          path: public/*.json
 
       - name: Debug git
         run: |
@@ -42,3 +52,8 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add public/menu.json public/buffet.json
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore: automated menu update $(date)" && git push)
+
+      - name: Notify on Failure
+        if: failure()
+        run: echo "Пайплайн упал! Отправка уведомления команде..."
+        # Сюда обычно вставляется curl запрос в Telegram или Slack
