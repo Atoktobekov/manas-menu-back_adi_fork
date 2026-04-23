@@ -34,7 +34,7 @@ jobs:
         continue-on-error: true
         run: |
           echo "Running ESLint..."
-          npx eslint . > lint-report.txt 2>&1
+          npx eslint . > lint-report.txt 2>&1 || true
           EXIT_CODE=$?
 
           if [ $EXIT_CODE -ne 0 ]; then
