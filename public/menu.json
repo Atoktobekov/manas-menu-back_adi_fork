@@ -221,15 +221,15 @@
       "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/suzme_mercimek_corbasi.jpg"
     },
     {
-      "id": "etli_nohut",
+      "id": "kurdak",
       "name": {
-        "tr": "Etli Nohut",
-        "ru": "Etli Nohut",
-        "en": "Etli Nohut"
+        "tr": "Kurdak",
+        "ru": "Kurdak",
+        "en": "Kurdak"
       },
-      "calories": 365,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/etli_nohut.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/etli_nohut.jpg"
+      "calories": 525,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/kurdak.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/kurdak.jpg"
     },
     {
       "id": "tutmac_corbasi",
@@ -568,7 +568,7 @@
       "date": "2026-05-18",
       "items": [
         "suzme_mercimek_corbasi",
-        "etli_nohut",
+        "kurdak",
         "sehriyeli_pirinc_pilavi",
         "cacik"
       ]
@@ -694,6 +694,6 @@
   "meta": {
     "timezone": "Asia/Bishkek",
     "source": "manas_kantin",
-    "lastUpdated": "2026-05-13T01:50:36.982Z"
+    "lastUpdated": "2026-05-13T14:26:26.787Z"
   }
 }
