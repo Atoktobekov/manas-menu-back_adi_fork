@@ -57,6 +57,7 @@ jobs:
 
       - name: Run parser
         id: parser
+        continue-on-error: true  # не падать если API недоступен
         run: |
           mkdir -p public
           node public/index.js
