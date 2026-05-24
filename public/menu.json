@@ -1,50 +1,6 @@
 {
   "foods": [
     {
-      "id": "yesil_mercimek_corbasi",
-      "name": {
-        "tr": "Yeşil Mercimek Çorbası",
-        "ru": "Суп",
-        "en": "Soup"
-      },
-      "calories": 176,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/yesil_mercimek_corbasi.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/yesil_mercimek_corbasi.jpg"
-    },
-    {
-      "id": "et_haslama",
-      "name": {
-        "tr": "Et Haşlama",
-        "ru": "Отварное мясо",
-        "en": "Boiled Meat"
-      },
-      "calories": 900,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/et_haslama.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/et_haslama.jpg"
-    },
-    {
-      "id": "tel_sehriyeli_bulgur_pilavi",
-      "name": {
-        "tr": "Tel Şehriyeli Bulgur Pilavı",
-        "ru": "Плов",
-        "en": "Pilaf"
-      },
-      "calories": 320,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/tel_sehriyeli_bulgur_pilavi.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/tel_sehriyeli_bulgur_pilavi.jpg"
-    },
-    {
-      "id": "islak_kek",
-      "name": {
-        "tr": "Islak Kek",
-        "ru": "Влажный кекс",
-        "en": "Moist Cake"
-      },
-      "calories": 380,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/islak_kek.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/islak_kek.jpg"
-    },
-    {
       "id": "elvan_corbasi",
       "name": {
         "tr": "Elvan Çorbası",
@@ -307,18 +263,20 @@
       "calories": 145,
       "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/sebzeli_eriste_corbasi.jpg",
       "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/sebzeli_eriste_corbasi.jpg"
+    },
+    {
+      "id": "et_haslama",
+      "name": {
+        "tr": "Et Haşlama",
+        "ru": "Отварное мясо",
+        "en": "Boiled Meat"
+      },
+      "calories": 900,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/et_haslama.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/et_haslama.jpg"
     }
   ],
   "menus": [
-    {
-      "date": "2026-05-23",
-      "items": [
-        "yesil_mercimek_corbasi",
-        "et_haslama",
-        "tel_sehriyeli_bulgur_pilavi",
-        "islak_kek"
-      ]
-    },
     {
       "date": "2026-05-24",
       "items": [
@@ -395,6 +353,6 @@
   "meta": {
     "timezone": "Asia/Bishkek",
     "source": "manas_kantin",
-    "lastUpdated": "2026-05-23T01:48:46.979Z"
+    "lastUpdated": "2026-05-24T01:55:09.174Z"
   }
 }
