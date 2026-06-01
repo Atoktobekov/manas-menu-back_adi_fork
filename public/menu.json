@@ -1,64 +1,9 @@
 {
-  "foods": [
-    {
-      "id": "sebzeli_eriste_corbasi",
-      "name": {
-        "tr": "Sebzeli Erişte Çorbası",
-        "ru": "Суп",
-        "en": "Soup"
-      },
-      "calories": 145,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/sebzeli_eriste_corbasi.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/sebzeli_eriste_corbasi.jpg"
-    },
-    {
-      "id": "et_haslama",
-      "name": {
-        "tr": "Et Haşlama",
-        "ru": "Отварное мясо",
-        "en": "Boiled Meat"
-      },
-      "calories": 900,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/et_haslama.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/et_haslama.jpg"
-    },
-    {
-      "id": "sehriyeli_bulgur_pilavi",
-      "name": {
-        "tr": "Şehriyeli Bulgur Pilavı",
-        "ru": "Плов",
-        "en": "Pilaf"
-      },
-      "calories": 315,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/sehriyeli_bulgur_pilavi.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/sehriyeli_bulgur_pilavi.jpg"
-    },
-    {
-      "id": "meyve",
-      "name": {
-        "tr": "Meyve",
-        "ru": "Фрукты",
-        "en": "Fruit"
-      },
-      "calories": 60,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/meyve.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/meyve.jpg"
-    }
-  ],
-  "menus": [
-    {
-      "date": "2026-05-31",
-      "items": [
-        "sebzeli_eriste_corbasi",
-        "et_haslama",
-        "sehriyeli_bulgur_pilavi",
-        "meyve"
-      ]
-    }
-  ],
+  "foods": [],
+  "menus": [],
   "meta": {
     "timezone": "Asia/Bishkek",
     "source": "manas_kantin",
-    "lastUpdated": "2026-05-31T02:02:34.098Z"
+    "lastUpdated": "2026-06-01T02:11:21.068Z"
   }
 }
