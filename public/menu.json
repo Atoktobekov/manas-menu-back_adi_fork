@@ -1,50 +1,6 @@
 {
   "foods": [
     {
-      "id": "yayla_corbasi",
-      "name": {
-        "tr": "Yayla Çorbası",
-        "ru": "Суп Яйла",
-        "en": "Yayla Soup"
-      },
-      "calories": 175,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/yayla_corbasi.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/yayla_corbasi.jpg"
-    },
-    {
-      "id": "tas_kebap",
-      "name": {
-        "tr": "Tas Kebap",
-        "ru": "Tas Kebap",
-        "en": "Tas Kebap"
-      },
-      "calories": 343,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/tas_kebap.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/tas_kebap.jpg"
-    },
-    {
-      "id": "sehriyeli_bulgur_pilavi",
-      "name": {
-        "tr": "Şehriyeli Bulgur Pilavı",
-        "ru": "Плов",
-        "en": "Pilaf"
-      },
-      "calories": 315,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/sehriyeli_bulgur_pilavi.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/sehriyeli_bulgur_pilavi.jpg"
-    },
-    {
-      "id": "lokma_tatlisi",
-      "name": {
-        "tr": "Lokma Tatlısı",
-        "ru": "Десерт",
-        "en": "Dessert"
-      },
-      "calories": 200,
-      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/lokma_tatlisi.jpg",
-      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/lokma_tatlisi.jpg"
-    },
-    {
       "id": "suzme_mercimek_corbasi",
       "name": {
         "tr": "Süzme Mercimek Çorbası",
@@ -133,6 +89,17 @@
       "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/meyve.jpg"
     },
     {
+      "id": "yayla_corbasi",
+      "name": {
+        "tr": "Yayla Çorbası",
+        "ru": "Суп Яйла",
+        "en": "Yayla Soup"
+      },
+      "calories": 175,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/yayla_corbasi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/yayla_corbasi.jpg"
+    },
+    {
       "id": "etli_taze_fasulye",
       "name": {
         "tr": "Etli Taze Fasulye",
@@ -142,6 +109,17 @@
       "calories": 310,
       "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/etli_taze_fasulye.jpg",
       "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/etli_taze_fasulye.jpg"
+    },
+    {
+      "id": "sehriyeli_bulgur_pilavi",
+      "name": {
+        "tr": "Şehriyeli Bulgur Pilavı",
+        "ru": "Плов",
+        "en": "Pilaf"
+      },
+      "calories": 315,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/sehriyeli_bulgur_pilavi.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/sehriyeli_bulgur_pilavi.jpg"
     },
     {
       "id": "coban_salata",
@@ -430,6 +408,17 @@
       "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/islak_kek.jpg"
     },
     {
+      "id": "tas_kebap",
+      "name": {
+        "tr": "Tas Kebap",
+        "ru": "Tas Kebap",
+        "en": "Tas Kebap"
+      },
+      "calories": 343,
+      "thumbUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/thumb/tas_kebap.jpg",
+      "fullPhotoUrl": "https://cdn.jsdelivr.net/gh/Atoktobekov/yemekhane-cdn@main/full/tas_kebap.jpg"
+    },
+    {
       "id": "kakaolu_puding",
       "name": {
         "tr": "Kakaolu Puding",
@@ -442,15 +431,6 @@
     }
   ],
   "menus": [
-    {
-      "date": "2026-10-04",
-      "items": [
-        "yayla_corbasi",
-        "tas_kebap",
-        "sehriyeli_bulgur_pilavi",
-        "lokma_tatlisi"
-      ]
-    },
     {
       "date": "2026-10-05",
       "items": [
@@ -581,6 +561,6 @@
   "meta": {
     "timezone": "Asia/Bishkek",
     "source": "manas_kantin",
-    "lastUpdated": "2026-10-04T03:02:11.311Z"
+    "lastUpdated": "2026-10-05T02:35:24.325Z"
   }
 }
